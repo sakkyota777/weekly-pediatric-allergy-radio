@@ -1,0 +1,66 @@
+{
+  "issue_date": "2026-07-25",
+  "format": {
+    "style": "2話者の対話形式（進行役ナオ × 解説役マキ先生）",
+    "topics": 3,
+    "take_home_per_topic": 3
+  },
+  "search": {
+    "query": "(pediatric OR paediatric OR children OR childhood) AND (kidney disease OR nephrology OR nephrotic OR nephritis OR renal)",
+    "datetype": "edat",
+    "date_from": "2026-07-18",
+    "date_to": "2026-07-25",
+    "new_hits_broad": 166
+  },
+  "selected": [
+    {
+      "pmid": "42485434",
+      "title": "SGLT2 inhibition modulates metabolic, vascular, and inflammatory molecular markers in the kidney in youth with type 1 diabetes",
+      "journal": "Science Translational Medicine",
+      "date": "2026-07-22",
+      "type": "Randomized Controlled Trial",
+      "doi": "10.1126/scitranslmed.aee1005",
+      "url": "https://doi.org/10.1126/scitranslmed.aee1005",
+      "one_line": "1型糖尿病の若者を対象にダパグリフロジンの腎保護メカニズムを腎生検・単一細胞RNA解析で示したRCT（ATTEMPT試験）。",
+      "take_home": [
+        "1型糖尿病の若者でも、SGLT2阻害薬は近位尿細管・血管内皮・ポドサイトの細胞レベルで保護的な変化をもたらしうる。",
+        "過剰濾過という“ごく早期のサイン”に介入する意義が、腎生検＋単一細胞解析で裏づけられた。",
+        "ただしメカニズム研究であり、DKA等の安全性と長期の腎アウトカムは今後の課題。"
+      ]
+    },
+    {
+      "pmid": "42493645",
+      "title": "Pediatric sepsis-associated acute kidney injury: leveraging pathophysiology for risk stratification and identification of treatable traits",
+      "journal": "Pediatric Nephrology",
+      "date": "2026-07-24",
+      "type": "Review",
+      "doi": "10.1007/s00467-026-07487-0",
+      "url": "https://doi.org/10.1007/s00467-026-07487-0",
+      "one_line": "小児の敗血症関連AKIを均一疾患でなく多様な病態の集合と捉え、精密医療的なリスク層別化と治療可能な特性の同定を提唱するレビュー。",
+      "take_home": [
+        "小児の敗血症関連AKI（SA-AKI）は単一疾患でなく、免疫・内皮・微小循環・ミトコンドリアなど多様な病態の集合。",
+        "エンドタイプや“治療できる特性（treatable traits）”で層別化する精密医療へ向かっている。",
+        "早期バイオマーカーで重症化リスクの高い子を見分ける試みが、実臨床に近づいている。"
+      ]
+    },
+    {
+      "pmid": "42483538",
+      "title": "IgA nephropathy: an overview of the disease, its pathophysiology, and involvement of the gut-kidney axis",
+      "journal": "Kidney International Supplements",
+      "date": "2026-07-20",
+      "type": "Review",
+      "doi": "10.1016/j.kisu.2026.01.003",
+      "url": "https://doi.org/10.1016/j.kisu.2026.01.003",
+      "one_line": "世界で最も多い原発性糸球体疾患IgA腎症の疫学・臨床像と、腸-腎軸を軸にした4ヒット病態モデルを概説。小児にも関わる進行性腎疾患。",
+      "take_home": [
+        "IgA腎症は“4ヒットモデル”で、Gd-IgA1増加→自己抗体→免疫複合体→メサンギウム沈着・炎症を一連の流れとして理解できる。",
+        "その起点には腸-腎軸があり、APRIL阻害・腸管標的ステロイド・補体阻害など新規治療の標的になっている。",
+        "小児でも起こる進行性疾患のため、健診で見つかる血尿・蛋白尿を見逃さないことが重要。"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {"pmid": "42498068", "reason": "胎児下部尿路閉塞への胎児介入（外科ニッチ）。今回は内科3本を優先。"},
+    {"pmid": "42474167", "reason": "思春期DKDの薬物スコーピングレビュー。トピック1（ATTEMPT）と主題が重複。"}
+  ]
+}

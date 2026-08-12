@@ -1,0 +1,69 @@
+{
+  "issue_date": "2026-07-26",
+  "format": {
+    "style": "2話者の対話形式（進行役ナオ × 解説役マキ先生）",
+    "topics": 3,
+    "take_home_per_topic": 3
+  },
+  "search": {
+    "query": "(pediatric OR paediatric OR children OR childhood) AND (kidney disease OR nephrology OR nephrotic OR nephritis OR renal)",
+    "datetype": "edat",
+    "date_from": "2026-07-19",
+    "date_to": "2026-07-26",
+    "new_hits_broad": 175
+  },
+  "selected": [
+    {
+      "pmid": "42475735",
+      "title": "Serology-based subtypes of pediatric rapidly progressive glomerulonephritis and early changes in eGFR and KIM-1: a prospective cohort study",
+      "journal": "Jornal Brasileiro de Nefrologia",
+      "date": "2026 (Vol.48 No.4)",
+      "type": "Prospective Cohort Study",
+      "doi": "10.1590/2175-8239-JBN-2026-0025en",
+      "url": "https://doi.org/10.1590/2175-8239-JBN-2026-0025en",
+      "one_line": "小児の急速進行性糸球体腎炎(RPGN)30例を前向きに追跡し、血清型（抗GBM型・免疫複合体型・ANCA関連型）別に3ヶ月後のeGFR変化と尿細管障害マーカーKIM-1を比較。血清型による有意差はなく、重症度や治療反応性の方が重要な可能性を示唆した。",
+      "take_home": [
+        "小児RPGNの血清型（抗GBM型・免疫複合体型・ANCA関連型）は、3ヶ月時点のeGFR回復やKIM-1改善と統計的に関連しなかった。",
+        "早期の腎機能回復には、血清学的サブタイプの分類よりも、診断時の重症度や治療反応性の方が影響する可能性がある。",
+        "症例数は30例と小規模であり、より大規模な前向き研究でのバイオマーカー検証が今後の課題。"
+      ]
+    },
+    {
+      "pmid": "42502665",
+      "title": "Resolution and Renal Outcomes in Children with High-Grade Vesicoureteral Reflux: A Longitudinal Study Using Radionuclide Cystography and Renal Scintigraphy",
+      "journal": "Nuclear Medicine and Molecular Imaging",
+      "date": "2025-12-23",
+      "type": "Longitudinal Cohort Study",
+      "doi": "10.1007/s13139-025-00977-3",
+      "url": "https://doi.org/10.1007/s13139-025-00977-3",
+      "one_line": "高度膀胱尿管逆流(VUR)を有する小児を1〜3年追跡し、自然消失率と新規腎瘢痕の発生率を核医学画像（排泄性膀胱尿道造影シンチグラフィ・腎シンチグラフィ）で評価した縦断研究。自然消失率は低く、約半数に新規瘢痕を認めた。",
+      "take_home": [
+        "高度VUR（グレードIV/V）の自然消失率は低く、内科的経過観察のみでの完全消失は11.8%にとどまった。",
+        "出生前水腎症の既往がある児では、新規腎瘢痕の発生が有意に多かった（全体で46.5%が新規瘢痕を発症）。",
+        "高度VURでは、現行の早期外科的介入の基準を見直す必要性が示唆される。"
+      ]
+    },
+    {
+      "pmid": "42484710",
+      "title": "Genetic and biological mechanisms of pediatric enuresis: integrating pathophysiology, GWAS associations, and multi-omics research",
+      "journal": "European Journal of Pediatrics",
+      "date": "2026-07-22",
+      "type": "Review",
+      "doi": "10.1007/s00431-026-07191-z",
+      "url": "https://doi.org/10.1007/s00431-026-07191-z",
+      "one_line": "小児の夜尿症（遺尿症）を、GWASで同定された6番・13番染色体のリスク遺伝子座や尿中アクアポリン2などのマルチオミクスデータと統合し、「脳-膀胱-腎軸」という新しい病態モデルで捉え直したレビュー。単純な成熟遅延モデルを超える生物学的多様性を提唱する。",
+      "take_home": [
+        "夜尿症は「排尿機能の成熟遅延」という単純な説明を超え、遺伝・概日リズム・腎の水分調節など複数経路が絡む不均一な病態と考えられる。",
+        "GWASで同定された6番・13番染色体のリスク遺伝子座は、神経シグナル伝達・概日リズム調節・腎の水分ハンドリングに関わっている。",
+        "7歳以降も続く難治性の夜尿症は、遺伝的背景の異なる「エンドタイプ」を反映しうる。多遺伝子リスクスコアなどを用いた精密医療的アプローチが今後期待される。"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {"pmid": "42501081", "reason": "非典型HUSと典型STEC-HUSの鑑別に関する症例報告。臨床的に興味深いが症例報告のため優先度を下げた。"},
+    {"pmid": "42498858", "reason": "オマーンのARPKD小児コホートに関するエディトリアルで、抄録本文が取得できず深掘りに不向き。"},
+    {"pmid": "42474167", "reason": "糖尿病性腎症の薬物療法スコーピングレビュー。先週号で近縁テーマ（SGLT2阻害薬）を取り上げたため今回は見送り。"},
+    {"pmid": "42483538", "reason": "IgA腎症のレビュー。先週号で既に取り上げ済みのため重複を回避。"},
+    {"pmid": "42497931", "reason": "食品添加物由来のリン酸塩による腎線維化メカニズム研究。培養細胞(HK-2)での基礎的機序研究であり、小児臨床データではない。"}
+  ]
+}

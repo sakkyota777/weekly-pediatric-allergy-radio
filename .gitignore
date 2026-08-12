@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Playwright / build artefacts
+.playwright/
+
+# OS noise
+.DS_Store

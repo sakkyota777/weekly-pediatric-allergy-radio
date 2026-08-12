@@ -1,0 +1,71 @@
+{
+  "issue_date": "2026-08-03",
+  "format": {
+    "style": "2話者の対話形式（進行役ナオ × 解説役マキ先生）",
+    "topics": 3,
+    "take_home_per_topic": 3
+  },
+  "search": {
+    "query": "(pediatric OR paediatric OR children OR childhood) AND (kidney disease OR nephrology OR nephrotic OR nephritis OR renal)",
+    "datetype": "edat",
+    "date_from": "2026-07-27",
+    "date_to": "2026-08-03",
+    "new_hits_broad": 218
+  },
+  "selected": [
+    {
+      "pmid": "42508611",
+      "title": "A multi-national study examined the response sustainability to calcineurin inhibitors and long-term kidney survivals in children with genetic podocytopathies.",
+      "journal": "Kidney International",
+      "date": "2026-07-27",
+      "type": "Retrospective Cohort Study",
+      "doi": "10.1016/j.kint.2026.06.030",
+      "url": "https://doi.org/10.1016/j.kint.2026.06.030",
+      "one_line": "遺伝性ポドサイト症の小児136例（世界34施設）を対象に、カルシニューリン阻害薬(CNI)への反応の持続性と長期腎予後を後ろ向きに解析。反応が持続した症例は追跡期間中に誰も腎不全に至らず、非持続例でも無反応群より腎不全リスクが92%低かった。",
+      "take_home": [
+        "遺伝性ポドサイト症でもCNIに反応する例が一定数存在し（6ヶ月時点で約28%）、反応が持続した患者は追跡期間中に誰も腎不全へ進行しなかった。",
+        "反応が持続しなかった患者（11%）でも、無反応群に比べ腎不全リスクが92%低く、一時的な反応にも臨床的意義がある。",
+        "遺伝子診断がついても「治療は無効」と決めつけず、CNIトライアルと反応のモニタリングを検討する価値がある。"
+      ]
+    },
+    {
+      "pmid": "42508606",
+      "title": "Secondary Thrombotic Microangiopathy (TMA) in children - A Central Role for the Glycocalyx.",
+      "journal": "Kidney International",
+      "date": "2026-07-27",
+      "type": "Mini Review",
+      "doi": "10.1016/j.kint.2026.04.047",
+      "url": "https://doi.org/10.1016/j.kint.2026.04.047",
+      "one_line": "肺炎球菌関連TMA・STEC-HUS・CNI関連TMA・高血圧関連TMAなど、原因の異なる小児の二次性血栓性微小血管症(TMA)に共通する機序として、血管内皮グリコカリックス(eGC)障害が補体制御破綻の「セカンドヒット」になるという統一的枠組みを提唱するミニレビュー。",
+      "take_home": [
+        "小児の二次性TMAは病因（感染・薬剤・高血圧など）は多様だが、血管内皮グリコカリックス(eGC)の障害という共通経路で結びつく可能性がある。",
+        "eGCが傷害されるとヘパラン硫酸が脱落し補体因子Hの結合が障害される——これが補体調節破綻を招く「セカンドヒット」機序として提案されている。",
+        "この枠組みは補体阻害薬が一部の小児にしか効かない理由を説明しうる。eGCの厚みをバイオマーカーとし、その修復を治療標的とする将来展望が示された。"
+      ]
+    },
+    {
+      "pmid": "42520414",
+      "title": "Empirical antibiotic prophylaxis versus culture-directed enhanced prophylaxis for prevention of urinary tract infection after flexible ureteroscopy in children: A randomized controlled trial.",
+      "journal": "Journal of Pediatric Urology",
+      "date": "2026-07-14",
+      "type": "Randomized Controlled Trial",
+      "doi": "10.1016/j.jpurol.2026.106151",
+      "url": "https://doi.org/10.1016/j.jpurol.2026.106151",
+      "one_line": "腎・尿管結石（1〜1.5cm）を持つ小児140例を対象に、軟性尿管鏡手術(FURS)後の経験的抗菌薬予防と、術前尿培養に基づく強化予防を比較したRCT。強化予防群で症候性UTI・全体の合併症率がともに有意に低下した。",
+      "take_home": [
+        "経験的抗菌薬予防のみでは術後30日以内の症候性UTIが18.6%発生したのに対し、術前尿培養に基づく強化予防では7.1%と有意に低下した（p=0.043）。",
+        "全体の術後合併症率も57.2%から29.9%へ有意に減少しており（p=0.001）、術前培養を追加する臨床的利益が示唆される。",
+        "140例・単施設のRCTであり、他施設・他集団での再現性確認が今後の課題。"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {"pmid": "42509956", "reason": "小児発症ループス腎炎に関する総説(Viewpoint)。新規データを伴わず、一次研究としての厚みに欠けるため見送り。"},
+    {"pmid": "42533127", "reason": "PAX2変異と表現型多様性に関する単施設後ろ向き研究。遺伝性腎疾患というテーマが選出したポドサイト症研究と重複するため見送り。"},
+    {"pmid": "42527695", "reason": "小児TMAにおける神経学的合併症の多施設観察研究。選出したTMA・グリコカリックスのレビューとテーマが重複するため見送り。"},
+    {"pmid": "42504727", "reason": "非下痢型STEC-HUSに関するレター。要旨が取得できず内容の厚みが不明な上、TMA関連トピックと重複するため見送り。"},
+    {"pmid": "42535231", "reason": "CureGNコホートにおける急性受診とQOLの関連。小児と成人が混在する相関研究であり、今回は他の3本を優先。"},
+    {"pmid": "42539822", "reason": "ベトナムでの超音波ガイド下腎生検導入に関する単施設後ろ向き研究。臨床的インパクトの面で他候補に及ばず見送り。"},
+    {"pmid": "42530570", "reason": "腎疾患を持つ思春期患者の移行期における不安・抑うつに関する単施設横断研究。今週は治療・機序に関する3本を優先。"}
+  ]
+}
