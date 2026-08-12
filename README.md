@@ -63,9 +63,9 @@ Chromium はこの実行環境に同梱済み（`PLAYWRIGHT_BROWSERS_PATH=/opt/p
 - `GEMINI_TTS_VOICE`（既定 `Kore`）
 
 ### 3. Notion 掲載先データベース
-Notion に新規ハブページ「[週刊・小児腎臓病ラジオ](https://app.notion.com/p/3a84bd470a818169afbcefb2f3b7f11b)」と
-その配下のデータベース「週刊・小児腎臓病ラジオ（各号）」を作成済み。掲載先の `data_source_id` は
-`1a961a49-2238-4dcb-87fc-53c23ffcb5d7`（`prompts/weekly_radio_prompt.md` に設定済み）。
+ハブページは太田真樹さんの Notion 上の **`weekly-pediatric-allergy-radio`**。
+その配下にデータベース「週刊・小児アレルギーラジオ（各号）」を自動作成／更新する
+（詳細は `prompts/weekly_radio_prompt.md` 手順7）。
 
 ## 手動実行（1 週分）
 ```bash

@@ -19,7 +19,7 @@
 |---|---|---|
 | `GEMINI_API_KEY` | 音声(MP3)生成 | 音声を出すなら必須 |
 | `NOTION_API_KEY` | Notion 掲載(内部インテグレーションのトークン) | Notion 掲載に必須 |
-| `NOTION_PARENT_ID` | 掲載先 DB/データソース id（未設定なら `YOUR_NOTION_DATA_SOURCE_ID` を差し替え） | 任意 |
+| `NOTION_PARENT_ID` | 掲載先 DB/データソース id（親ハブは Notion ページ `weekly-pediatric-allergy-radio`） | 任意 |
 | `NCBI_API_KEY` / `NCBI_EMAIL` | PubMed のレート上限緩和 | 任意 |
 
 Notion 側: 内部インテグレーションを作成し、掲載先 DB に「接続」を追加して共有しておくこと。

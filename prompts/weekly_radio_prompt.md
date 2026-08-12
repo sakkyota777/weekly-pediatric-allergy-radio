@@ -38,8 +38,9 @@ hosts:
 - リポジトリ: `sakkyota777/weekly-pediatric-allergy-radio`（push 先ブランチは手順6で自動的に決まる）
 - 利用コネクタ(MCP): PubMed / Notion（Google Drive は任意のバックアップ）
 - 環境変数 `GEMINI_API_KEY`（未設定なら音声はスキップし、その旨を成果物と通知に明記）
-- Notion 掲載先データベース(data_source_id): **`YOUR_NOTION_DATA_SOURCE_ID`**
-  （「週刊・小児アレルギーラジオ（各号）」用 DB。未設定のままでは掲載できないので、セットアップ時に差し替える）
+- Notion ハブ（親ページ）: **`weekly-pediatric-allergy-radio`**（太田真樹さんの Notion。コネクタ認可でこのページへの書き込みを許可すること）
+- Notion 掲載先データベース: 親ページ配下の **`週刊・小児アレルギーラジオ（各号）`**
+  （無ければ手順7で自動作成。作成後の `data_source_id` は最終メッセージに記録する）
 
 ## 手順
 
@@ -108,20 +109,42 @@ hosts:
 - どちらのブランチに push したかを、最終メッセージに記す。
 
 ### 7. Notion 掲載（音源を再生できる形で埋め込む）
-- 前提の `YOUR_NOTION_DATA_SOURCE_ID` が未差し替えの場合は、この手順をスキップし最終メッセージに明記する。
-- 添付を作成（**source_url に上記 raw URL** を渡す。`notion-create-attachment`）:
-  - MP3 → 返る `file-upload://…` を音声ブロック `<audio src="file-upload://…">…</audio>` に使う（インライン再生可）。
-  - PNG → 返る `file-upload://…` を画像 `![caption](file-upload://…)` に使う。
-  - ※ 添付は取得から1時間以内にページへ配置すること。MP3 は無料WSで 5MiB 未満に収める（TTS の qscale で調整可）。
-- 当週ページは **update-or-create**（重複防止）:
-  - まず `notion-search`(data_source_url = `collection://YOUR_NOTION_DATA_SOURCE_ID`) で「<DATE> 号」を検索。
-  - 有れば `notion-update-page`（`replace_content` で本文差し替え＋`update_properties`）、無ければ
-    `notion-create-pages`（parent = `data_source_id: YOUR_NOTION_DATA_SOURCE_ID`）。
-  - properties: 週(タイトル=「YYYY-MM-DD 号」)、公開日、トピック数=3、PMIDs、MP3(URL=raw)、インフォグラフィックPNG(URL=raw)。
-  - content（Notion-flavored Markdown）: 冒頭 callout（出典・2話者・Take Home の案内）→ `## 🔊 今週の音声` に
-    `<audio>` → `## 🖼️ インフォグラフィック` に画像 → `## 今週のトピック（3本）` に各論文（見出し=タイトル、
-    誌名・日付・種別・PMID・DOI リンク＋詳しい要約＋`<callout icon="🎯">` に Take Home 3点）。
-  - 実装時に NFM 仕様 `notion://docs/enhanced-markdown-spec` を参照（推測で書かない）。
+
+**7-1. 掲載先データベースを確保する（update-or-create）**
+- `notion-search` で親ページ名 **`weekly-pediatric-allergy-radio`** を探す（太田真樹さんの Notion）。
+  見つからなければ同名で作成するか、最終メッセージに失敗理由を明記してこの手順を中断する。
+- その親ページ配下で、名前に `週刊・小児アレルギーラジオ（各号）`（または `show_name` + `（各号）`）を含む
+  データベースを探す。
+- **見つからなければ `notion-create-database` で新規作成**する。親 = 上記ハブページ。
+  プロパティ構成:
+
+  | プロパティ名 | 型 |
+  |---|---|
+  | 週 | タイトル |
+  | 公開日 | 日付 |
+  | トピック数 | 数値 |
+  | PMIDs | テキスト |
+  | MP3 | URL |
+  | インフォグラフィックPNG | URL |
+
+- 作成／特定した database の `data_source_id` を最終メッセージに記録する。
+
+> ツールの引数は**推測で書かず**、実行時にツールスキーマと
+> NFM 仕様 `notion://docs/enhanced-markdown-spec` を参照すること。
+
+**7-2. 添付を作成**（`notion-create-attachment` の `source_url` に **上記 raw URL** を渡す）
+- MP3 → 返る `file-upload://…` を音声ブロック `<audio src="file-upload://…">…</audio>` に使う（インライン再生可）。
+- PNG → 返る `file-upload://…` を画像 `![caption](file-upload://…)` に使う。
+- ※ 添付は取得から1時間以内にページへ配置すること。MP3 は無料WSで 5MiB 未満に収める（TTS の qscale で調整可）。
+
+**7-3. 当週ページを update-or-create**（重複防止）
+- まず `notion-search` で「`<DATE>` 号」を当該 DB 内から探す。
+- 有れば `notion-update-page`（`replace_content` で本文差し替え＋`update_properties`）、無ければ
+  `notion-create-pages`（parent = 7-1 の data_source_id）。
+- properties: 週(タイトル=「YYYY-MM-DD 号」)、公開日、トピック数=3、PMIDs、MP3(URL=raw)、インフォグラフィックPNG(URL=raw)。
+- content（Notion-flavored Markdown）: 冒頭 callout（出典・2話者・Take Home の案内）→ `## 🔊 今週の音声` に
+  `<audio>` → `## 🖼️ インフォグラフィック` に画像 → `## 今週のトピック（3本）` に各論文（見出し=タイトル、
+  誌名・日付・種別・PMID・DOI リンク＋詳しい要約＋`<callout icon="🎯">` に Take Home 3点）。
 
 ### 8. （任意）Google Drive バックアップ
 - 必要に応じて `mcp__Google_Drive__create_file` で `radio.mp3` / `infographic.png` を保管し、

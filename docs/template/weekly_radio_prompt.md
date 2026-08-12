@@ -139,8 +139,8 @@ python scripts/tts_gemini.py reports/<DATE>/script.txt reports/<DATE>/radio.mp3 
   | MP3 | URL |
   | インフォグラフィックPNG | URL |
 
-- 作成先の親ページは、ユーザーのワークスペース直下（`notion-search` で書き込み可能な
-  ページを1つ選ぶ）。作成した database の id は最終メッセージに記録する。
+- 作成先の親ページは、名前が **`weekly-pediatric-allergy-radio`** のハブページ
+  （`notion-search` で特定。太田真樹さんの Notion）。作成した database の id は最終メッセージに記録する。
 
 > ツールの引数は**推測で書かず**、実行時にツールスキーマと
 > NFM 仕様 `notion://docs/enhanced-markdown-spec` を参照すること。
