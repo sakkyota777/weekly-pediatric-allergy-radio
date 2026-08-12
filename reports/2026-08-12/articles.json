@@ -1,0 +1,75 @@
+{
+  "issue_date": "2026-08-12",
+  "format": {
+    "style": "2話者の対話形式（進行役 OTA × 解説役 キュピ太郎先生）",
+    "topics": 3,
+    "take_home_per_topic": 3
+  },
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-08-05",
+    "date_to": "2026-08-12",
+    "new_hits_broad": 99,
+    "new_hits_quality_filtered": 17
+  },
+  "selected": [
+    {
+      "pmid": "42559040",
+      "title": "Novel nonsteroidal topical therapies for pediatric atopic dermatitis: a systematic review and network meta-analysis of randomized controlled trials.",
+      "journal": "Frontiers in Immunology",
+      "date": "2026-07-22",
+      "type": "Systematic Review / Network Meta-Analysis",
+      "doi": "10.3389/fimmu.2026.1906218",
+      "url": "https://doi.org/10.3389/fimmu.2026.1906218",
+      "one_line": "小児アトピー性皮膚炎に対する新規非ステロイド外用薬(JAK阻害薬・PDE4阻害薬・AhRアゴニストなど)15件のRCT・3,994例を対象にネットワークメタ解析。多くの実薬がプラセボ(基剤)に優り、デルゴシチニブとジファミラストが上位にランクされ、重篤な有害事象増加は明確でなかった。",
+      "take_home": [
+        "12論文・15件のRCT、小児3,994例を統合したネットワークメタ解析で、新規非ステロイド外用薬の多くが基剤(vehicle)よりIGA治療成功やEASI改善で優れていた(タピナロフ0.5%1日1回を除く)。",
+        "IGA治療成功・EASI-75ではデルゴシチニブ0.5%1日2回が、EASI-90ではジファミラスト1%1日2回が最上位にランクされたが、実薬同士を直接比較した試験は1件のみで、間接比較に基づく点に注意が必要。",
+        "治療関連有害事象の明確な増加は認めなかったが、年齢層別・長期・実薬同士の頭打ち比較データはまだ乏しく、ステロイドに代わる選択肢として位置づけるには今後の検証が必要。"
+      ]
+    },
+    {
+      "pmid": "42575621",
+      "title": "The Food Allergy-Eosinophilic Esophagitis Continuum: Implications for Food Allergy Immunotherapy.",
+      "journal": "The Journal of Allergy and Clinical Immunology: In Practice",
+      "date": "2026-08",
+      "type": "Review",
+      "doi": "10.1016/j.jaip.2026.06.025",
+      "url": "https://doi.org/10.1016/j.jaip.2026.06.025",
+      "one_line": "IgE依存性食物アレルギーと好酸球性食道炎(EoE)を『別の病気』ではなく抗原曝露パターンで表現型が移り変わる連続体として捉え直すレビュー。経口免疫療法(OIT)中のEoE発症リスクと免疫学的機序、モニタリングの重要性を論じている。",
+      "take_home": [
+        "IgE依存性食物アレルギーの小児ではEoEの有病率が一般集団の約100倍(4.7%)に達し、抗原回避を続けるかどうかがIgE経路とT2主体のEoE経路のどちら寄りの表現型になるかに関わっている可能性が提示されている。",
+        "経口免疫療法(OIT)中は消化器症状が高頻度にみられ、確定診断されたEoEの発症は参加者の1〜10%と報告されており、脱感作のベネフィットと食道炎リスクを天秤にかけたリスク層別化が必要とされる。",
+        "制御性T細胞の機能不全が表現型スイッチの中心にあると考えられており、著者らは非侵襲的バイオマーカーや個別化モニタリングプロトコルの確立を今後の課題として挙げている。"
+      ]
+    },
+    {
+      "pmid": "42553163",
+      "title": "Association of fermented dairy consumption with asthma and wheeze risk in children: a systematic review and meta-analysis of observational studies.",
+      "journal": "Frontiers in Nutrition",
+      "date": "2026-07-21",
+      "type": "Systematic Review / Meta-Analysis",
+      "doi": "10.3389/fnut.2026.1860222",
+      "url": "https://doi.org/10.3389/fnut.2026.1860222",
+      "one_line": "発酵乳製品の摂取と小児の喘息・喘鳴リスクの関連を検討した観察研究11件・119,372人のメタ解析。主解析ではリスク低下と関連したが、より保守的な統計調整(Hartung-Knapp法)では有意性が消失し、エビデンスの確実性は『非常に低い』と評価された。",
+      "take_home": [
+        "11件の観察研究・119,372人を統合した主解析では、発酵乳製品摂取が小児の喘息/喘鳴リスク低下と関連していた(OR 0.72、95%CI 0.55-0.95)が、異質性が大きかった(I²=77.0%)。",
+        "より保守的なHartung-Knapp調整を行うと同じOR 0.72でも95%CIが0.52-1.01となり統計学的有意性が消失、横断研究では関連がみられた一方コホート研究では有意な関連が確認できなかった。",
+        "著者らはエビデンスの確実性を『非常に低い』と結論しており、現時点で発酵乳製品摂取を喘息予防目的で積極的に推奨する根拠にはならず、大規模な前向き研究が必要としている。"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {"pmid": "42578759", "reason": "アトピー性皮膚炎のtreat-to-targetに関するISADポジションペーパー。重要だが小児限定の一次データを伴わない総説のため見送り。"},
+    {"pmid": "42575431", "reason": "コロラド州の学校ぜんそく対策プログラムに関する実装科学レビュー。臨床的知見より医療制度・教育政策寄りのため見送り。"},
+    {"pmid": "42570170", "reason": "遺伝性血管性浮腫(HAE)に対するラナデルマブの長期予防に関するレビュー。小児アレルギー(喘息/食物アレルギー/アトピー性皮膚炎)の主要領域から外れるため見送り。"},
+    {"pmid": "42562282", "reason": "肥満・喘息・アレルギーと食事に関する総説。テーマは近いが一次データを伴わない総論のため見送り。"},
+    {"pmid": "42556613", "reason": "喘息における『寛解』概念を論じた総説。概念整理として興味深いが小児特異的データが乏しいため見送り。"},
+    {"pmid": "42555752", "reason": "便微生物移植と食物アレルギーの機序解明フェーズ1試験。対象が成人ピーナッツアレルギー患者15例のみで小児データではないため見送り。"},
+    {"pmid": "42552373", "reason": "好酸球性多発血管炎性肉芽腫症(EGPA)の治療進歩に関するレビュー。小児アレルギー3領域(喘息/食物アレルギー/アトピー性皮膚炎)から外れるため見送り。"},
+    {"pmid": "42571417", "reason": "アレルギー性鼻炎単独と鼻炎+喘息の実世界データ比較(MASK-air)。成人含む全年齢層のリアルワールドデータで小児特異的分析ではないため見送り。"},
+    {"pmid": "42564344", "reason": "喘息における腸内細菌叢の機序レビュー。基礎メカニズム中心で小児臨床データが乏しいため見送り。"},
+    {"pmid": "42559554", "reason": "外用ステロイド(メチルプレドニゾロンアセポン酸エステル)の再評価レビュー。既存薬の総説で新規性が高くないため見送り。"}
+  ]
+}
