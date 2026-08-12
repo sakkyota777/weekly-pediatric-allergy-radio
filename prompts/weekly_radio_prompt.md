@@ -38,7 +38,9 @@ hosts:
 - リポジトリ: `sakkyota777/weekly-pediatric-allergy-radio`（push 先ブランチは手順6で自動的に決まる）
 - 利用コネクタ(MCP): PubMed / Notion（Google Drive は任意のバックアップ）
 - 環境変数 `GEMINI_API_KEY`（未設定なら音声はスキップし、その旨を成果物と通知に明記）
-- Notion ハブ（親ページ）: **`weekly-pediatric-allergy-radio`**（太田真樹さんの Notion。コネクタ認可でこのページへの書き込みを許可すること）
+- Notion ハブ（親ページ）: **`weekly-pediatric-allergy-radio`**
+  - URL: https://www.notion.so/weekly-pediatric-allergy-radio-3b6a3d5979de80d5b5e9cc8d010e1f60
+  - page_id: **`3b6a3d59-79de-80d5-b5e9-cc8d010e1f60`**（太田真樹さんの Notion。コネクタ認可でこのページへの書き込みを許可すること）
 - Notion 掲載先データベース: 親ページ配下の **`週刊・小児アレルギーラジオ（各号）`**
   （無ければ手順7で自動作成。作成後の `data_source_id` は最終メッセージに記録する）
 
@@ -111,11 +113,12 @@ hosts:
 ### 7. Notion 掲載（音源を再生できる形で埋め込む）
 
 **7-1. 掲載先データベースを確保する（update-or-create）**
-- `notion-search` で親ページ名 **`weekly-pediatric-allergy-radio`** を探す（太田真樹さんの Notion）。
-  見つからなければ同名で作成するか、最終メッセージに失敗理由を明記してこの手順を中断する。
+- 親ハブは page_id **`3b6a3d59-79de-80d5-b5e9-cc8d010e1f60`**
+  （https://www.notion.so/weekly-pediatric-allergy-radio-3b6a3d5979de80d5b5e9cc8d010e1f60 ）。
+  `notion-search` / ページ取得で到達できることを確認する。届かない場合はコネクタの書き込み許可を疑う。
 - その親ページ配下で、名前に `週刊・小児アレルギーラジオ（各号）`（または `show_name` + `（各号）`）を含む
   データベースを探す。
-- **見つからなければ `notion-create-database` で新規作成**する。親 = 上記ハブページ。
+- **見つからなければ `notion-create-database` で新規作成**する。親 = 上記ハブページ（page_id）。
   プロパティ構成:
 
   | プロパティ名 | 型 |

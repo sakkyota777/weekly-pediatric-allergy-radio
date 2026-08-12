@@ -2,6 +2,9 @@
 
 **週刊・小児アレルギーラジオ** の配信ハブです。
 
+- Notion: https://www.notion.so/weekly-pediatric-allergy-radio-3b6a3d5979de80d5b5e9cc8d010e1f60
+- page_id: `3b6a3d59-79de-80d5-b5e9-cc8d010e1f60`
+
 ## 番組
 - 進行役: **OTA**（低い男性の声）
 - 解説役: **キュピ太郎先生**（甲高い・きゃぴきゃぴした声）

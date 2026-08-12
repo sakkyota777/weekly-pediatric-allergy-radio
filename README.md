@@ -63,7 +63,8 @@ Chromium はこの実行環境に同梱済み（`PLAYWRIGHT_BROWSERS_PATH=/opt/p
 - `GEMINI_TTS_VOICE`（既定 `Kore`）
 
 ### 3. Notion 掲載先データベース
-ハブページは太田真樹さんの Notion 上の **`weekly-pediatric-allergy-radio`**。
+ハブページ: [weekly-pediatric-allergy-radio](https://www.notion.so/weekly-pediatric-allergy-radio-3b6a3d5979de80d5b5e9cc8d010e1f60)
+（page_id: `3b6a3d59-79de-80d5-b5e9-cc8d010e1f60`）
 その配下にデータベース「週刊・小児アレルギーラジオ（各号）」を自動作成／更新する
 （詳細は `prompts/weekly_radio_prompt.md` 手順7）。
 
