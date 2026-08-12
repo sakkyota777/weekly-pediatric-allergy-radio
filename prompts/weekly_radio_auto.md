@@ -43,14 +43,15 @@ python scripts/pubmed_fetch.py --date-to <DATE> --days 7 --max 30 \
 - `reports/<DATE>/articles.json` に保存（`issue_date`, `search`, `selected[]`。各: pmid, title, journal, date, type, doi, url, one_line, **`take_home`（3点配列）**）。選外候補は `not_selected_this_week` に理由付きで残す。
 
 ### 3. 台本 `script.md` / 読み上げ用 `script.txt`
-- **2話者の対話形式**。進行役 **OTA**（聞き手）× 解説役 **キュピ太郎先生**（小児アレルギー専門）。
+- **2話者の対話形式**。進行役 **OTA**（低く落ち着いた男性）× 解説役 **キュピ太郎先生**（甲高い・きゃぴきゃぴ・ハイテンション）。
 - オープニング（2人の自己紹介＋今週は3本を深掘り）→各トピック（OTA の問いを挟み、背景→デザイン→結果→臨床的含意まで詳しく。PMID を口頭でも。**末尾にキュピ太郎先生が「今日の Take Home」を3点**明言）→クロージング（共通テーマ）。
+- 口調: OTA は短く穏やか。キュピ太郎先生は感嘆多め・弾む語尾。ただし数字・PMID・Take Home ははっきり。
 - 8〜10 分相当（約 3,000〜4,000 字）。断定を避け原著参照を促す。
 - `script.txt` は Markdown 記号・URL を除いた素のテキスト。**各発話を `OTA: …` / `キュピ太郎先生: …` の話者ラベル付き**にし、発話ごとに空行で区切る。
 
 ### 4. 音声 MP3（2話者マルチスピーカー）
 ```bash
-python scripts/tts_gemini.py reports/<DATE>/script.txt reports/<DATE>/radio.mp3 --speakers "OTA=Fenrir,キュピ太郎先生=Leda"
+python scripts/tts_gemini.py reports/<DATE>/script.txt reports/<DATE>/radio.mp3 --speakers "OTA=Charon,キュピ太郎先生=Laomedeia"
 ```
 - `--speakers` の名前は `script.txt` の話者ラベルと**完全一致**させる（Gemini マルチスピーカーは最大2話者）。声は `GEMINI_TTS_SPEAKERS` でも指定可。
 - 終了コード 2（`GEMINI_API_KEY` 未設定）なら音声はスキップし、以降 `mp3_url` は null。

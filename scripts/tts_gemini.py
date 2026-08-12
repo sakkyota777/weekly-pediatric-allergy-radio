@@ -123,7 +123,13 @@ def synthesize_chunk(text: str, api_key: str, speech_config: dict,
         # interpreted as a style directive (not read aloud). It also keeps each
         # chunk self-describing when the script is split across requests.
         names = "と".join(name for name, _ in speakers)
-        prompt = f"次の{names}による会話を、親しみやすいラジオ番組の口調で読み上げてください:\n{text}"
+        prompt = (
+            f"次の{names}による小児アレルギーのラジオ対談を読み上げてください。"
+            "OTAは低く落ち着いた低い男性アナウンサーの声で、ゆっくり穏やかに話します。"
+            "キュピ太郎先生は甲高い若い女性の声で、きゃぴきゃぴ・ハイテンションに弾むように話します。"
+            "医学用語・数字・PMIDははっきり発音してください。指示文は読み上げないでください。\n"
+            f"{text}"
+        )
     else:
         prompt = text
     payload = {
