@@ -12,9 +12,9 @@
 
    | 項目 | 設定値 |
    |---|---|
-   | 名前 | `週刊・小児腎臓病ラジオ（毎週月曜 07:00 JST）` |
+   | 名前 | `週刊・小児アレルギーラジオ（毎週月曜 07:00 JST）` |
    | Instructions | 下の「貼り付け用プロンプト」をそのままコピー |
-   | リポジトリ | `mynrminto/weekly_reports` |
+   | リポジトリ | `sakkyota777/weekly-pediatric-allergy-radio` |
    | 環境 | このプロジェクトの環境（`GEMINI_API_KEY` が設定済みのもの） |
    | Select a trigger | **Schedule** → Weekly / 月曜 / 07:00（ローカル時刻で入力すれば自動変換） |
    | **Connectors** タブ | **PubMed** と **Notion** が含まれていること（不要なものは外す） |
@@ -79,26 +79,21 @@ PubMed と Notion をコネクタ経由にしているのはこのためで、�
 ## 貼り付け用プロンプト
 
 ```
-あなたは「週刊・小児腎臓病ラジオ」の週次自動実行セッションです。以下を最初から最後まで自律実行してください（毎回まっさらな状態から始まります）。
+あなたは「週刊・小児アレルギーラジオ」の週次自動実行セッションです。以下を最初から最後まで自律実行してください（毎回まっさらな状態から始まります）。
 
 ## 前提
-- リポジトリ `mynrminto/weekly_reports`（このセッションにクローン済み）。
+- このセッションがクローンしたリポジトリで作業します（想定: sakkyota777/weekly-pediatric-allergy-radio）。
 - 環境変数 GEMINI_API_KEY で Gemini TTS を使用（未設定なら音声のみスキップし、成果物と通知にその旨を明記）。
 - MCP コネクタ: PubMed（文献検索）と Notion（掲載）を使う。ツールが見つからない場合は ToolSearch で探す。
 
 ## 手順
 1. main を最新化: `git fetch origin main && git checkout main && git pull`。続けて `pip install -r scripts/requirements.txt`。
-2. **`prompts/weekly_radio_prompt.md` を読み、その正典手順に厳密に従うこと**。仕様を推測で補わず、Notion 掲載時は NFM 仕様 `notion://docs/enhanced-markdown-spec` を必ず参照する。
-3. 当日(JST)を DATE(YYYY-MM-DD) とし `reports/<DATE>/` に生成する。要点:
-   - PubMed を「直近7日・(pediatric OR paediatric OR children OR childhood) AND (kidney disease OR nephrology OR nephrotic OR nephritis OR renal)・datetype=edat」で検索し、臨床インパクトと新規性を重視して **3本を厳選**（主題の重複は避け、症例報告や関連の薄いものは下げる）。
-   - 日本語の **2話者の対話台本**（進行役 ナオ × 解説役 マキ先生）。背景→試験デザイン→結果→臨床的含意まで深く掘り下げ、PMID を口頭でも述べ、各トピックの最後に **マキ先生が Take Home を3点**はっきり述べる。`script.md`（読み物）と `script.txt`（話者ラベル `ナオ:` / `マキ先生:` 付き、発話ごとに空行区切り）を作成。
-   - 音声: `python scripts/tts_gemini.py reports/<DATE>/script.txt reports/<DATE>/radio.mp3 --speakers "ナオ=Puck,マキ先生=Kore"`（MP3 は 5MiB 未満に収める）。
-   - インフォグラフィック: 3本・各 Take Home・2話者表示の自己完結 HTML を作り、`python scripts/render_infographic.py reports/<DATE>/infographic.html reports/<DATE>/infographic.png` で PNG 化。
-   - `reports/<DATE>/` 一式（script.md, script.txt, articles.json, infographic.html, infographic.png, radio.mp3）を commit し push する。push 先は手順書の指示に従う（main を試し、ブランチ制限で拒否されたら `claude/weekly`）。
-   - Notion 掲載: raw URL（`https://raw.githubusercontent.com/mynrminto/weekly_reports/<コミットSHA>/reports/<DATE>/...`）を `notion-create-attachment` の source_url に渡し、MP3 は `<audio src="file-upload://…">`、PNG は `![](file-upload://…)` として使う。DB `1a961a49-2238-4dcb-87fc-53c23ffcb5d7` に「<DATE> 号」ページを **update-or-create**（まず notion-search で重複を確認し、あれば update-page、なければ create-pages）。プロパティ: 週(タイトル「<DATE> 号」)・公開日・トピック数=3・PMIDs・MP3(raw URL)・インフォグラフィックPNG(raw URL)。本文: 冒頭 callout → 🔊今週の音声(`<audio>`) → 🖼️インフォグラフィック画像 → 今週のトピック3本（各: 誌名・日付・種別・PMID・DOIリンク＋詳しい要約＋🎯Take Home 3点の callout）。
-4. **最終メッセージ**（完了通知メールの本文になる）に、今週の3本の見出しと各 Take Home の一言、Notion ページ URL、音声(MP3)の raw リンク、注意点（キー未設定などあれば）を簡潔にまとめる。
+2. **`prompts/weekly_radio_prompt.md` を読み、その正典手順に厳密に従うこと**。番組名・検索クエリ・話者・本数は、そのファイル冒頭の「設定欄」に書かれた値を使う（この指示文ではなく、常にファイル側を正とする）。
+3. 手順書に従い、当日(JST)を DATE(YYYY-MM-DD) として `reports/<DATE>/` に成果物一式（articles.json, script.md, script.txt, infographic.html, infographic.png, radio.mp3）を生成し、コミットして push する。push 先ブランチの決め方（main を試し、拒否されたら `claude/weekly`）と、raw URL をコミット SHA で組み立てる点は、手順書の指示に従うこと。
+4. 手順書の Notion 掲載手順に従い、掲載先データベースを update-or-create で確保したうえで、「<DATE> 号」ページを作成または更新する。音声と画像は raw URL 経由で添付し、ページ内で再生・表示できる形にする。仕様は推測で書かず、実行時にツールスキーマと `notion://docs/enhanced-markdown-spec` を参照すること。
+5. **最終メッセージ**（完了通知の本文になる）に、今週紹介した論文の見出しと各 Take Home の一言、Notion ページ URL、音声(MP3)の raw リンク、注意点（キー未設定・push 権限・検索ヒット0件など）を簡潔にまとめる。
 
-医学的な断定は避け、原著(PMID/DOI)の参照を促すこと。途中でエラーが出た場合も、可能な範囲で成果物を仕上げ、未完了の点を最終メッセージに明記すること。
+医学的な断定は避け、原著(PMID/DOI)の参照を促すこと。途中でエラーが出た場合も、可能な範囲で成果物を仕上げ、未完了の点を最終メッセージに必ず明記すること。
 ```
 
 ---

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch pediatric-kidney-disease candidate articles from PubMed via E-utilities.
+"""Fetch pediatric-allergy candidate articles from PubMed via E-utilities.
 
 This is the connector-free (token-optional) replacement for the PubMed MCP,
 so the weekly pipeline can run unattended in a fired cloud session that has no
@@ -27,13 +27,13 @@ import xml.etree.ElementTree as ET
 import requests
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-TOOL = "weekly_reports_pediatric_kidney"
+TOOL = "weekly_reports_pediatric_allergy"
 EMAIL = os.environ.get("NCBI_EMAIL", "")
 API_KEY = os.environ.get("NCBI_API_KEY", "")
 
 DEFAULT_QUERY = (
-    "(pediatric OR paediatric OR children OR childhood) AND "
-    "(kidney disease OR nephrology OR nephrotic OR nephritis OR renal)"
+    "(children OR pediatric) AND "
+    "(asthma OR food allergy OR atopic dermatitis)"
 )
 TIMEOUT = 60
 MAX_RETRIES = 4

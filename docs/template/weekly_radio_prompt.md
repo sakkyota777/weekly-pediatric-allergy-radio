@@ -10,20 +10,19 @@
 
 ```yaml
 # 番組名（Notion のデータベース名にも使われます）
-show_name: "週刊・小児腎臓病ラジオ"
+show_name: "週刊・小児アレルギーラジオ"
 
 # PubMed 検索クエリ（自分の専門領域に差し替える）
 pubmed_query: >-
-  (pediatric OR paediatric OR children OR childhood)
-  AND (kidney disease OR nephrology OR nephrotic OR nephritis OR renal)
+  (children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)
 
 # 1回あたりに取り上げる論文数
 topic_count: 3
 
 # 2話者の設定（name は台本の話者ラベルと完全一致させる。voice は Gemini の音声名）
 hosts:
-  - { role: "進行役", name: "ナオ",     voice: "Puck" }   # 聞き手・リスナー代弁
-  - { role: "解説役", name: "マキ先生", voice: "Kore" }   # その領域の専門家
+  - { role: "進行役", name: "OTA",           voice: "Fenrir" }  # 低い男性の声・聞き手
+  - { role: "解説役", name: "キュピ太郎先生", voice: "Leda" }    # 甲高い・きゃぴきゃぴ
 ```
 
 **差し替え例**
