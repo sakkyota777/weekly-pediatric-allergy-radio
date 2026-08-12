@@ -21,8 +21,8 @@ topic_count: 3
 
 # 2話者の設定（name は台本の話者ラベルと完全一致させる。voice は Gemini の音声名）
 hosts:
-  - { role: "進行役", name: "OTA",           voice: "Charon" }     # 低く落ち着いた男性
-  - { role: "解説役", name: "キュピ太郎先生", voice: "Laomedeia" }  # 甲高い・ハイテンション女性
+  - { role: "進行役", name: "OTA",           voice: "Algieba" }    # ゆっくり・短く・落ち着いて・明瞭
+  - { role: "解説役", name: "キュピ太郎先生", voice: "Laomedeia" }  # ハイテンション・だね/だよ/きゅぴ
 ```
 
 **差し替え例**
