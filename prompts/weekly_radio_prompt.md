@@ -117,12 +117,17 @@ hosts:
   - `https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/<SHA>/reports/<DATE>/infographic.png`
 - どちらのブランチに push したかを、最終メッセージに記す。
 
-### 7. Notion 掲載（音源を再生できる形で埋め込む）
+### 7. Notion 掲載（音源を再生できる形で埋め込む）— **配信完了の必須条件**
+
+> **重要**: GitHub への push だけでは「配信完了」ではない。Notion ページの URL が取れるまで終わらないこと。
+> コネクタ欠落・添付失敗・DB 未作成は、最大 **3 回**リトライする（間に 30 秒空ける）。
 
 **7-1. 掲載先データベースを確保する（update-or-create）**
 - 親ハブは page_id **`3b6a3d59-79de-80d5-b5e9-cc8d010e1f60`**
   （https://www.notion.so/weekly-pediatric-allergy-radio-3b6a3d5979de80d5b5e9cc8d010e1f60 ）。
   `notion-search` / ページ取得で到達できることを確認する。届かない場合はコネクタの書き込み許可を疑う。
+- Notion ツールが見つからない場合は **ToolSearch で Notion を探す**。それでも無い場合は
+  最終メッセージと `delivery.json` に「Notion コネクタ未接続」と明記し、Routine 設定の見直しを促す。
 - その親ページ配下で、名前に `週刊・小児アレルギーラジオ（各号）`（または `show_name` + `（各号）`）を含む
   データベースを探す。
 - **見つからなければ `notion-create-database` で新規作成**する。親 = 上記ハブページ（page_id）。
@@ -137,17 +142,22 @@ hosts:
   | MP3 | URL |
   | インフォグラフィックPNG | URL |
 
-- 作成／特定した database の `data_source_id` を最終メッセージに記録する。
+- 作成／特定した database の `data_source_id` は `delivery.json` と最終メッセージに記録する。
 
 > ツールの引数は**推測で書かず**、実行時にツールスキーマと
 > NFM 仕様 `notion://docs/enhanced-markdown-spec` を参照すること。
 
-**7-2. 添付を作成**（`notion-create-attachment` の `source_url` に **上記 raw URL** を渡す）
+**7-2. 添付を作成する前に raw URL を疎通確認**
+- `curl -I`（または同等）で MP3 / PNG の raw URL が **HTTP 200** であることを確認してから添付する。
+- 404 の場合は push / SHA を見直し、直してから再試行。
+
+**7-3. 添付を作成**（`notion-create-attachment` の `source_url` に **上記 raw URL** を渡す）
 - MP3 → 返る `file-upload://…` を音声ブロック `<audio src="file-upload://…">…</audio>` に使う（インライン再生可）。
 - PNG → 返る `file-upload://…` を画像 `![caption](file-upload://…)` に使う。
 - ※ 添付は取得から1時間以内にページへ配置すること。MP3 は無料WSで 5MiB 未満に収める（TTS の qscale で調整可）。
+- 添付が失敗したら raw URL だけのリンク付きページでもよいので、**ページ自体は必ず作成**する。
 
-**7-3. 当週ページを update-or-create**（重複防止）
+**7-4. 当週ページを update-or-create**（重複防止）
 - まず `notion-search` で「`<DATE>` 号」を当該 DB 内から探す。
 - 有れば `notion-update-page`（`replace_content` で本文差し替え＋`update_properties`）、無ければ
   `notion-create-pages`（parent = 7-1 の data_source_id）。
@@ -156,6 +166,21 @@ hosts:
   `<audio>` → `## 🖼️ インフォグラフィック` に画像 → `## 今週のトピック（3本）` に各論文（見出し=タイトル、
   誌名・日付・種別・PMID・DOI リンク＋詳しい要約＋`<callout icon="🎯">` に Take Home 3点）。
 
+**7-5. 配信ステータスを必ず残す**
+- `reports/<DATE>/delivery.json` を書いてコミット＆push する（例）:
+  ```json
+  {
+    "date": "<DATE>",
+    "github_sha": "<SHA>",
+    "notion_url": "https://www.notion.so/...",
+    "notion_ok": true,
+    "mp3_url": "https://raw.githubusercontent.com/.../radio.mp3",
+    "png_url": "https://raw.githubusercontent.com/.../infographic.png",
+    "errors": []
+  }
+  ```
+- Notion 失敗時は `notion_ok: false` と `errors` に理由を書き、それでも push する。
+
 ### 8. （任意）Google Drive バックアップ
 - 必要に応じて `mcp__Google_Drive__create_file` で `radio.mp3` / `infographic.png` を保管し、
   共有リンクを `reports/<DATE>/links.txt` に記録（主たる配信は上記 raw URL + Notion 埋め込み）。
@@ -163,6 +188,7 @@ hosts:
 ### 9. 最終メッセージ（= 完了通知の本文になる）
 次を簡潔にまとめて出力:
 - 今週紹介した 3 本の見出し（各トピックの Take Home も一言）
-- Notion ページ URL
+- **Notion ページ URL（無い場合は失敗理由を冒頭に太字で書く）**
 - 音声（MP3）の raw リンク（未生成ならその旨）
-- 補足（キー未設定などの注意があれば）
+- 補足（キー未設定・コネクタ欠落・リトライ結果など）
+- `delivery.json` の `notion_ok` が false なら「配信未完了」と明記する

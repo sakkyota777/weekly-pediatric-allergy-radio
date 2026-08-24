@@ -43,9 +43,7 @@ import sys
 import requests
 
 API = "https://api.notion.com/v1"
-DEFAULT_PARENT = os.environ.get(
-    "NOTION_PARENT_ID", "1a961a49-2238-4dcb-87fc-53c23ffcb5d7"
-)
+DEFAULT_PARENT = os.environ.get("NOTION_PARENT_ID", "")
 VERSION = os.environ.get("NOTION_VERSION", "2022-06-28")
 TIMEOUT = 60
 
@@ -219,13 +217,18 @@ def main() -> None:
         die("NOTION_API_KEY is not set. Add it to the environment (Notion internal "
             "integration token) and share the target DB with the integration.", code=2)
 
-    schema = get_schema(key, args.parent)
+    parent = args.parent or os.environ.get("NOTION_PARENT_ID", "")
+    if not parent:
+        die("NOTION_PARENT_ID / --parent is required (週刊・小児アレルギーラジオ（各号） DB id).",
+            code=2)
+
+    schema = get_schema(key, parent)
     if not schema:
-        die(f"Could not read the DB schema for parent {args.parent}. Check that the "
+        die(f"Could not read the DB schema for parent {parent}. Check that the "
             f"integration is shared with it and the id is correct.")
 
     body = {
-        "parent": build_parent(bool(schema), args.parent),
+        "parent": build_parent(bool(schema), parent),
         "properties": build_properties(payload, schema),
         "children": build_children(payload),
     }

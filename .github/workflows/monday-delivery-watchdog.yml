@@ -1,0 +1,121 @@
+name: monday-delivery-watchdog
+
+# 月曜 07:30 JST (= 日曜 22:30 UTC) に、当日号が GitHub にあるか確認する。
+# 無い／Notion 未完了なら Issue を立てて気づけるようにする。
+on:
+  schedule:
+    - cron: "30 22 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check today's report and Notion delivery status
+        id: check
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          DIR="reports/${DATE}"
+          echo "date=${DATE}" >> "$GITHUB_OUTPUT"
+          echo "Checking ${DIR}"
+
+          if [[ ! -d "$DIR" ]]; then
+            echo "missing=true" >> "$GITHUB_OUTPUT"
+            echo "reason=reports/${DATE} フォルダがありません（Routine が動いていない可能性）" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          NEED=(articles.json script.md script.txt infographic.html)
+          for f in "${NEED[@]}"; do
+            if [[ ! -f "$DIR/$f" ]]; then
+              echo "missing=true" >> "$GITHUB_OUTPUT"
+              echo "reason=${DIR}/${f} がありません" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+
+          if [[ ! -f "$DIR/radio.mp3" ]]; then
+            echo "missing=true" >> "$GITHUB_OUTPUT"
+            echo "reason=${DIR}/radio.mp3 がありません（GEMINI_API_KEY 未設定の可能性）" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [[ ! -f "$DIR/delivery.json" ]]; then
+            echo "missing=true" >> "$GITHUB_OUTPUT"
+            echo "reason=${DIR}/delivery.json がありません（Notion 掲載未完了の可能性）" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if ! python3 -c "import json,sys; d=json.load(open('${DIR}/delivery.json',encoding='utf-8')); sys.exit(0 if d.get('notion_ok') else 1)"; then
+            echo "missing=true" >> "$GITHUB_OUTPUT"
+            echo "reason=${DIR}/delivery.json の notion_ok が false（Notion 掲載失敗）" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "missing=false" >> "$GITHUB_OUTPUT"
+          echo "reason=ok" >> "$GITHUB_OUTPUT"
+
+      - name: Open GitHub Issue when delivery is incomplete
+        if: steps.check.outputs.missing == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = '${{ steps.check.outputs.date }}';
+            const reason = `${{ steps.check.outputs.reason }}`;
+            const title = `[配信ウォッチ] ${date} 号が未完了`;
+            const body = [
+              `自動チェック（月曜 07:30 JST）で、**${date} 号の配信が未完了**でした。`,
+              '',
+              `**理由:** ${reason}`,
+              '',
+              '## 確認してほしいこと',
+              '1. [claude.ai/code/routines](https://claude.ai/code/routines) で Routine が有効か',
+              '2. スケジュールが毎週月曜 07:00（ローカル時刻）か',
+              '3. Connectors に PubMed と Notion があるか',
+              '4. 環境変数 `GEMINI_API_KEY` があるか',
+              '5. Notion ハブページへの書き込み許可があるか',
+              '',
+              '復旧: Routine の **今すぐ実行** で再生成・再掲載してください。',
+              '',
+              `リポジトリ: ${context.payload.repository.html_url}`,
+            ].join('\n');
+
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+            });
+            const existing = issues.data.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `再検知: ${reason}`,
+              });
+            } else {
+              try {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: 'delivery-watchdog',
+                  color: 'd73a4a',
+                  description: 'Monday Notion delivery missing',
+                });
+              } catch (_) { /* already exists */ }
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['delivery-watchdog'],
+              });
+            }

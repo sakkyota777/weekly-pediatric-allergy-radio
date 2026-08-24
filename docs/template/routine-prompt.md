@@ -16,8 +16,8 @@ claude.ai/code/routines の **Instructions** 欄に、下のコードブロッ�
 1. main を最新化: `git fetch origin main && git checkout main && git pull`。続けて `pip install -r scripts/requirements.txt`。
 2. **`prompts/weekly_radio_prompt.md` を読み、その正典手順に厳密に従うこと**。番組名・検索クエリ・話者・本数は、そのファイル冒頭の「設定欄」に書かれた値を使う（この指示文ではなく、常にファイル側を正とする）。
 3. 手順書に従い、当日(JST)を DATE(YYYY-MM-DD) として `reports/<DATE>/` に成果物一式（articles.json, script.md, script.txt, infographic.html, infographic.png, radio.mp3）を生成し、コミットして push する。push 先ブランチの決め方（main を試し、拒否されたら `claude/weekly`）と、raw URL をコミット SHA で組み立てる点は、手順書の指示に従うこと。
-4. 手順書の Notion 掲載手順に従い、掲載先データベースを update-or-create で確保したうえで、「<DATE> 号」ページを作成または更新する。音声と画像は raw URL 経由で添付し、ページ内で再生・表示できる形にする。仕様は推測で書かず、実行時にツールスキーマと `notion://docs/enhanced-markdown-spec` を参照すること。
-5. **最終メッセージ**（完了通知の本文になる）に、今週紹介した論文の見出しと各 Take Home の一言、Notion ページ URL、音声(MP3)の raw リンク、注意点（キー未設定・push 権限・検索ヒット0件など）を簡潔にまとめる。
+4. 手順書の Notion 掲載手順に従い、掲載先データベースを update-or-create で確保したうえで、「<DATE> 号」ページを作成または更新する。音声と画像は raw URL 経由で添付し、ページ内で再生・表示できる形にする。**Notion 掲載は配信完了の必須条件**（最大3回リトライ）。終わったら `reports/<DATE>/delivery.json`（notion_ok / notion_url）を書いて push する。仕様は推測で書かず、実行時にツールスキーマと `notion://docs/enhanced-markdown-spec` を参照すること。
+5. **最終メッセージ**（完了通知の本文になる）に、今週紹介した論文の見出しと各 Take Home の一言、**Notion ページ URL（失敗なら理由を冒頭に）**、音声(MP3)の raw リンク、注意点（キー未設定・push 権限・検索ヒット0件・コネクタ欠落など）を簡潔にまとめる。
 
 医学的な断定は避け、原著(PMID/DOI)の参照を促すこと。途中でエラーが出た場合も、可能な範囲で成果物を仕上げ、未完了の点を最終メッセージに必ず明記すること。
 ```
