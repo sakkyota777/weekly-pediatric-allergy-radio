@@ -1,11 +1,10 @@
 {
   "date": "2026-08-24",
-  "github_sha": "ef81c20",
-  "notion_url": null,
-  "notion_ok": false,
-  "mp3_url": "https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/ef81c20/reports/2026-08-24/radio.mp3",
-  "png_url": "https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/ef81c20/reports/2026-08-24/infographic.png",
-  "errors": [
-    "Scheduled run produced GitHub artifacts but Notion page was not confirmed. Re-run Routine (今すぐ実行) to publish to Notion hub 3b6a3d59-79de-80d5-b5e9-cc8d010e1f60."
-  ]
+  "github_sha": "ef81c20cf614d75082651b78e965abc8182fcce6",
+  "notion_url": "https://www.notion.so/3c5a3d5979de8140b1c6ed324950b131",
+  "notion_ok": true,
+  "notion_data_source_id": "004a8153-dfdc-4cdc-89f2-5749c699ec8c",
+  "mp3_url": "https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/ef81c20cf614d75082651b78e965abc8182fcce6/reports/2026-08-24/radio.mp3",
+  "png_url": "https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/ef81c20cf614d75082651b78e965abc8182fcce6/reports/2026-08-24/infographic.png",
+  "errors": []
 }
