@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-31",
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-08-24",
+    "date_to": "2026-08-31",
+    "total_hits": 88,
+    "filtered_hits_review_rct_guideline": 23
+  },
+  "topics": [
+    {
+      "pmid": "42646841",
+      "title": "Bilevel Positive Airway Pressure and Continuous Albuterol for Pediatric Asthma Exacerbations: A Randomized Clinical Trial",
+      "journal": "JAMA Network Open",
+      "date": "2026-08-03",
+      "doi": "10.1001/jamanetworkopen.2026.30627",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2026.30627",
+      "study_type": "Randomized Controlled Trial (二重盲検)",
+      "one_line": "中等症の小児喘息発作に対し、救急外来での早期BPAP併用は持続吸入β刺激薬の投与時間を短縮しなかった。",
+      "summary": "5〜17歳、中等症以上(PRAM≧4)の急性喘息発作で救急受診し持続アルブテロール投与予定の小児66名を対象に、実薬BPAP群とシャムBPAP群に二重盲検ランダム化した単施設RCT。主要評価項目は持続アルブテロール投与時間。中間解析(50%時点)でBPAP群8.3時間 vs 対照群8.7時間(差 -0.5時間、95%CI -5.0〜4.1、P=.84)と有意差なく、無益性の基準を満たしたため試験は中止された。死亡・侵襲的人工呼吸・気漏・誤嚥性肺炎はいずれの群にも発生しなかった。著者らはより重症例を対象とした非盲検研究の必要性を指摘している。",
+      "take_home": [
+        "中等症の小児喘息発作では、早期のBPAP併用は持続吸入β刺激薬の投与時間を短縮するというエビデンスは今回得られなかった",
+        "本研究は中間解析で無益性のため早期終了しており、重症例やより長い介入期間では結果が異なる可能性がある",
+        "BPAPの安全性自体は良好(重篤な有害事象なし)だが、日常臨床でのルーチン早期併用を積極的に支持する根拠にはならない"
+      ]
+    },
+    {
+      "pmid": "42668711",
+      "title": "Atopic dermatitis and attention-deficit/hyperactivity disorder comorbidity in children and adolescents: Epidemiology, mechanisms, and clinical management",
+      "journal": "Pediatric Investigation",
+      "date": "2026-08-28",
+      "doi": "10.1002/ped4.70083",
+      "url": "https://doi.org/10.1002/ped4.70083",
+      "study_type": "Narrative Review",
+      "one_line": "アトピー性皮膚炎の小児はADHD発症リスクが高く、特に早期発症・重症・睡眠障害を伴う例で顕著。「炎症-掻痒-神経行動」軸の関与が想定される。",
+      "summary": "小児・思春期におけるアトピー性皮膚炎(AD)とADHDの併存に関するナラティブレビュー。疫学的には AD 患児でADHDの発症リスクが上昇しており、特に早期発症・重症AD・強い睡眠障害を伴う症例でリスクが顕著であるとされる。機序としては皮膚炎症、掻痒による睡眠分断、それに伴う神経行動学的異常が悪循環を形成する「炎症-掻痒-神経行動」軸が仮説として提示されている。臨床的には、AD患児における行動・注意の問題への積極的なスクリーニングと、皮膚炎症・掻痒の早期からの十分なコントロールが、この悪循環を断ち切る鍵になりうると提案している。",
+      "take_home": [
+        "重症・早期発症・睡眠障害を伴うアトピー性皮膚炎の子どもでは、ADHD発症リスクが高いことを念頭に置く",
+        "皮膚炎と睡眠障害の悪循環がADHDリスクに関わる可能性があり、掻痒・睡眠の評価も診療に組み込む価値がある",
+        "AD患児で行動・注意の問題を積極的にスクリーニングし、皮膚炎症を十分にコントロールすることが将来的なリスク低減につながる可能性がある(今後の前向き研究が必要)"
+      ]
+    },
+    {
+      "pmid": "42667982",
+      "title": "Peanut Oral Immunotherapy Updosing via In-Office, Video, and Telephone Encounters: Safety and Caregiver Satisfaction",
+      "journal": "Annals of Allergy, Asthma & Immunology",
+      "date": "2026-08-29",
+      "doi": "10.1016/j.anai.2026.08.023",
+      "url": "https://doi.org/10.1016/j.anai.2026.08.023",
+      "study_type": "前向き観察研究",
+      "one_line": "乳幼児のピーナッツ経口免疫療法(POIT)の増量を、対面・ビデオ・電話を組み合わせたハイブリッド方式で行っても安全性・満足度は良好だった。",
+      "summary": "生後6〜47か月のピーナッツアレルギー児53名を対象に、対面診察に加えてビデオ・電話診察を組み合わせたハイブリッド方式でPOITの増量(updosing)を実施した前向き研究。24件の治療関連反応が14名(26.4%)に発生し、54.2%は自然軽快、41.7%は抗ヒスタミン薬で改善、1件(4.2%)はエピネフリン投与を要した(対面での増量時)。増量時の反応率は1回投与あたり0.4%、エピネフリンを要するリスクは0.1%であり、増量時と自宅維持投与時で反応率に統計学的有意差はなかった(OR 2.34, 95%CI 0.69–7.96, p=0.16)。保護者の71.7%は対面・ビデオ・電話を組み合わせた方式を好み、通院負担軽減と利便性を主な理由に挙げた。",
+      "take_home": [
+        "乳幼児ピーナッツ経口免疫療法の増量を、対面だけでなくビデオ・電話診察と組み合わせても安全性は許容範囲内だった",
+        "エピネフリンを要した反応は全体でわずか0.1%/回であったが、対面増量時に発生しており慎重な経過観察は引き続き必要",
+        "保護者は通院負担が減るハイブリッド方式を好む傾向があり、アクセス改善の選択肢として今後の検討に値する"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {
+      "pmid": "42642256",
+      "title": "Biomarkers in pediatric asthma: clinical maturity, intended use, and future directions",
+      "reason": "有用なレビューだが、今週採用したBPAP試験と同じ小児喘息領域で内容が重複するため見送り"
+    },
+    {
+      "pmid": "42659447",
+      "title": "Insights from long-term follow-up of patients treated with oral immunotherapy for cow's milk allergy",
+      "reason": "今週採用したピーナッツOITのテレヘルス研究とテーマが近く、深掘りの重複を避けるため見送り"
+    },
+    {
+      "pmid": "42650357",
+      "title": "Associations of Comorbid Atopic Dermatitis, Food Allergy, and Respiratory Allergic Diseases with Somatic Problems in Children: A Birth Cohort Study",
+      "reason": "今週採用したAD-ADHD併存レビューとテーマが近接するため見送り(次点候補)"
+    },
+    {
+      "pmid": "42646649",
+      "title": "Comparing Respiratory Support Modalities in Pediatric Asthma Exacerbation-A Systematic Review and Meta-Analysis",
+      "reason": "BPAP試験と主題が重複するため見送り"
+    }
+  ]
+}
