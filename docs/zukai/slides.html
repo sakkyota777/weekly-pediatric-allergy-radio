@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>週刊・小児アレルギーラジオ — 5分プレゼ</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111c31; --panel2:#0f1830;
+    --ink:#e8eef8; --muted:#93a4c0; --line:#22304d;
+    --a1:#38bdf8; --a2:#34d399; --a3:#f59e0b; --a4:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif}
+  .deck{height:100%;position:relative}
+  .slide{
+    position:absolute;inset:0;padding:48px 56px 72px;
+    display:flex;flex-direction:column;justify-content:center;
+    opacity:0;pointer-events:none;transition:opacity .35s ease;
+  }
+  .slide.active{opacity:1;pointer-events:auto}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--a1);margin-bottom:12px}
+  .kicker::before{content:"";display:inline-block;width:8px;height:8px;background:var(--a1);
+    border-radius:50%;margin-right:10px;box-shadow:0 0 0 4px rgba(56,189,248,.2)}
+  h1{font-size:clamp(32px,4.5vw,52px);line-height:1.15;margin-bottom:16px}
+  h1 .accent{color:var(--a1)}
+  h2{font-size:clamp(26px,3.5vw,38px);line-height:1.2;margin-bottom:20px}
+  .sub{color:var(--muted);font-size:clamp(16px,2vw,20px);line-height:1.6;max-width:880px}
+  .highlight{color:var(--a3);font-weight:700}
+  ul.bullets{list-style:none;margin-top:20px;max-width:900px}
+  ul.bullets li{
+    padding:14px 18px;margin-bottom:10px;font-size:clamp(15px,1.8vw,19px);line-height:1.55;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--line);border-radius:12px;
+  }
+  ul.bullets li strong{color:var(--a2)}
+  .two-col{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:stretch;margin-top:8px}
+  @media(max-width:900px){.two-col{grid-template-columns:1fr}}
+  .two-col.output .bullets{font-size:clamp(14px,1.6vw,17px)}
+  .two-col.output .bullets li{padding:10px 14px;margin-bottom:8px}
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:20px}
+  .flow-step{
+    background:var(--panel2);border:2px solid var(--a1);border-radius:12px;
+    padding:14px 18px;font-size:clamp(14px,1.6vw,17px);font-weight:700;color:#dbe4f2;
+  }
+  .flow-arrow{color:var(--muted);font-size:20px;font-weight:800}
+  .flow-note{margin-top:20px;padding:16px 20px;border-left:4px solid var(--a3);
+    background:rgba(245,158,11,.08);border-radius:0 12px 12px 0;
+    font-size:clamp(15px,1.7vw,18px);line-height:1.6;max-width:900px}
+  .screenshot-wrap{
+    display:flex;align-items:center;justify-content:center;
+    min-height:58vh;border-radius:12px;border:1px solid var(--line);
+    background:var(--panel2);overflow:hidden;
+  }
+  .screenshot{
+    width:100%;height:58vh;border-radius:0;border:none;
+    object-fit:cover;object-position:center 8%;background:var(--panel2);
+  }
+  .hosts-mini{display:flex;gap:32px;justify-content:flex-start;margin-top:16px;align-items:flex-start}
+  .hosts-mini figure{text-align:center}
+  .hosts-mini .ota .photo{
+    width:120px;height:120px;margin:0 auto 6px;
+    border-radius:50%;border:3px solid var(--line);
+    overflow:hidden;
+  }
+  .hosts-mini .ota .photo img{
+    width:100%;height:100%;object-fit:cover;display:block;
+  }
+  .hosts-mini .kewpie .photo{
+    width:120px;height:120px;margin:0 auto 6px;
+    border-radius:12px;border:3px solid var(--line);
+    overflow:hidden;background:#fff;
+  }
+  .hosts-mini .kewpie .photo img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transform:scale(1.12) translateY(-4%);transform-origin:center center;
+  }
+  .hosts-mini figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+  .audio-box{
+    margin-top:24px;padding:24px 28px;max-width:720px;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--line);border-radius:16px;
+  }
+  .audio-box p{font-size:15px;color:var(--muted);margin-bottom:12px}
+  audio{width:100%;margin-top:8px}
+  .author-row{display:flex;align-items:center;gap:20px;margin-top:24px}
+  .author-row img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+  .author-row .name{font-size:22px;font-weight:800;line-height:1.3}
+  .author-row .role{font-size:14px;color:var(--muted);font-weight:500;margin-left:10px}
+  .nav{
+    position:fixed;bottom:20px;right:24px;display:flex;gap:10px;z-index:10;
+  }
+  .nav button{
+    background:var(--panel);border:1px solid var(--line);color:var(--ink);
+    padding:10px 18px;border-radius:10px;cursor:pointer;font-size:14px;font-weight:700;
+  }
+  .nav button:hover{border-color:var(--a1);color:var(--a1)}
+  .progress{
+    position:fixed;bottom:0;left:0;height:4px;background:var(--a1);transition:width .3s;z-index:10;
+  }
+  .slide-num{
+    position:fixed;bottom:24px;left:24px;color:var(--muted);font-size:13px;z-index:10;
+  }
+  .big-num{font-size:clamp(48px,8vw,72px);font-weight:800;color:var(--a1);line-height:1;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 1. タイトル -->
+  <section class="slide active" data-note="約40秒。自己紹介は名前と肩書だけ。">
+    <h1>週刊・<span class="accent">小児アレルギー</span>ラジオ</h1>
+    <p class="sub">専門分野の新着論文を、<span class="highlight">毎週自動で「聞けるラジオ」</span>に変えて届ける仕組み<br>— 自動化で毎週の面倒を解決する実例 —</p>
+    <div class="author-row">
+      <img src="ota.png" alt="太田真樹">
+      <div class="name">太田真樹 <span class="role">武蔵村山病院　小児科専門医・小児アレルギー専門医</span></div>
+    </div>
+  </section>
+
+  <!-- 2. 面倒 -->
+  <section class="slide" data-note="約45秒。医学用語は使わない。">
+    <h2>こんな<span class="accent">面倒</span>がありました！</h2>
+    <ul class="bullets">
+      <li>自分の専門分野の<strong>新着論文が毎週たくさん</strong>出る（例: 1週間で99件ヒット）</li>
+      <li>全部は読めない。読んでも<strong>頭に残りにくい</strong></li>
+      <li>確認する時間は<strong>昼休みの30分</strong>くらいしかない</li>
+    </ul>
+    <p class="flow-note" style="margin-top:24px">
+      → だから「読む」をやめて、<strong>「聞く」</strong>に変えた。<br>
+      しかも<strong>毎週、自分で何もしなくても届く</strong>ようにした。
+    </p>
+  </section>
+
+  <!-- 3. 届くもの -->
+  <section class="slide" data-note="約50秒。スクショを指しながら。">
+    <h2>毎週、自動で届く<strong style="color:var(--a2)">4点セット</strong></h2>
+    <div class="two-col output">
+      <ul class="bullets" style="margin-top:0">
+        <li><strong>対話ラジオ台本</strong> — 2人の掛け合い</li>
+        <li><strong>音声 MP3</strong> — 約8〜10分</li>
+        <li><strong>図解 PNG</strong> — 要点3つずつ</li>
+        <li><strong>Notion ページ</strong> — その場で再生できる</li>
+      </ul>
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="notion-screenshot.png" alt="Notion完成品">
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 自動化の流れ（強調） -->
+  <section class="slide" data-note="約70秒。ここが本題。ゆっくり説明。">
+    <h2>一度設定すれば、<span class="accent">毎週勝手に回る</span></h2>
+    <p class="sub">毎週月曜 7:00 — AIエージェントが新しい作業セッションを起動し、<strong>最初から最後まで自律実行</strong></p>
+    <div class="flow">
+      <span class="flow-step">⏰ 定期実行</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">📚 論文DB検索</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">✍️ 3本厳選・台本</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🔊 音声合成</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🖼️ 図解生成</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">📤 GitHub保存</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">📬 Notion配信</span>
+    </div>
+    <p class="flow-note">
+      <strong>ポイント:</strong> 人間の作業はゼロ。設定変更も「設定ファイルを1つ編集して push」するだけ。<br>
+      番組名・検索条件・話者の声 — 全部コード管理。
+    </p>
+  </section>
+
+  <!-- 5. 音声デモ -->
+  <section class="slide" data-note="約60秒。3:50から1分聞かせる。">
+    <h2>実際の<span class="accent">ラジオ</span>を聞いてみる</h2>
+    <p class="sub">2人のAI音声が、選んだ論文を対話形式で解説します。</p>
+    <div class="hosts-mini">
+      <figure class="ota">
+        <div class="photo"><img src="ota.png" alt="OTA"></div>
+        <figcaption>OTA（進行役）</figcaption>
+      </figure>
+      <figure class="kewpie">
+        <div class="photo"><img src="kewpie-doctor.png" alt="キュピ太郎先生"></div>
+        <figcaption>キュピ太郎先生（解説役）</figcaption>
+      </figure>
+    </div>
+    <div class="audio-box">
+      <p>▼ 2026年8月24日号（3:50〜4:50 抜粋・1分）</p>
+      <audio id="demoAudio" controls preload="metadata"
+        src="https://raw.githubusercontent.com/sakkyota777/weekly-pediatric-allergy-radio/ef81c20cf614d75082651b78e965abc8182fcce6/reports/2026-08-24/radio.mp3">
+        お使いのブラウザは音声再生に対応していません。
+      </audio>
+    </div>
+  </section>
+
+  <!-- 6. 工夫 -->
+  <section class="slide" data-note="約50秒。IT向けに。">
+    <h2>自動化を<span class="accent">安定</span>させる工夫</h2>
+    <ul class="bullets">
+      <li><strong>認証を2系統に分離</strong> — 論文DB・Notion はクラウド連携、音声合成APIは環境変数。ネットワーク設定不要</li>
+      <li><strong>設定は1ファイルに集約</strong> — 番組内容を変えても定期実行の設定は触らない（Gitで履歴管理）</li>
+      <li><strong>配信は raw URL 経由</strong> — GitHub に push → Notion が音声・画像をページ内再生</li>
+      <li><strong>配信監視</strong> — 月曜朝に未配信を検知して GitHub Issue を自動作成</li>
+    </ul>
+  </section>
+
+  <!-- 7. まとめ -->
+  <section class="slide" data-note="約30秒。">
+    <h2>まとめ</h2>
+    <div class="big-num">99 → 3 → 1</div>
+    <p class="sub">
+      99件の新着から <strong>3本</strong> を厳選し、<strong>1本のラジオ</strong>に。<br>
+      毎週月曜、昼休みに<strong>耳からキャッチアップ</strong>できる。
+    </p>
+    <ul class="bullets" style="margin-top:28px">
+      <li>専門分野の情報更新を<strong>「習慣」から「自動」</strong>に変えられる</li>
+      <li>Claude（台本・ orchestration）+ Gemini（音声）+ GitHub + Notion の組み合わせ</li>
+      <li>図解: <strong style="color:var(--a1)">weekly-pediatric-allergy-radio.surge.sh</strong></li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="progress" id="progress"></div>
+<p class="slide-num" id="slideNum">1 / 7</p>
+<div class="nav">
+  <button type="button" id="prev">← 前</button>
+  <button type="button" id="next">次 →</button>
+</div>
+
+<script>
+(function(){
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const progress = document.getElementById('progress');
+  const slideNum = document.getElementById('slideNum');
+  const audios = [...document.querySelectorAll('audio')];
+
+  function show(n){
+    slides[i].classList.remove('active');
+    audios.forEach(a => { if(!a.paused) a.pause(); });
+    i = Math.max(0, Math.min(n, slides.length - 1));
+    slides[i].classList.add('active');
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    slideNum.textContent = (i + 1) + ' / ' + slides.length;
+  }
+
+  document.getElementById('prev').onclick = () => show(i - 1);
+  document.getElementById('next').onclick = () => show(i + 1);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); show(i + 1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+
+  // touch swipe
+  let x0 = null;
+  document.addEventListener('touchstart', e => { x0 = e.changedTouches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) show(dx < 0 ? i + 1 : i - 1);
+    x0 = null;
+  });
+
+  // 5枚目: 3:50 から 1 分間だけ再生
+  const demoAudio = document.getElementById('demoAudio');
+  if (demoAudio) {
+    const CLIP_START = 3 * 60 + 50;
+    const CLIP_END = CLIP_START + 60;
+
+    demoAudio.addEventListener('play', () => {
+      if (demoAudio.currentTime < CLIP_START || demoAudio.currentTime >= CLIP_END) {
+        demoAudio.currentTime = CLIP_START;
+      }
+    });
+
+    demoAudio.addEventListener('timeupdate', () => {
+      if (demoAudio.currentTime >= CLIP_END) {
+        demoAudio.pause();
+        demoAudio.currentTime = CLIP_START;
+      }
+    });
+
+    demoAudio.addEventListener('seeked', () => {
+      if (demoAudio.currentTime < CLIP_START) demoAudio.currentTime = CLIP_START;
+      if (demoAudio.currentTime > CLIP_END) demoAudio.currentTime = CLIP_START;
+    });
+  }
+})();
+</script>
+</body>
+</html>

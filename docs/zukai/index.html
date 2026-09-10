@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>週刊・小児アレルギーラジオ</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111c31; --panel2:#0f1830;
+    --ink:#e8eef8; --muted:#93a4c0; --line:#22304d;
+    --a1:#38bdf8; --a2:#34d399; --a3:#f59e0b; --a4:#a78bfa; --a5:#f472b6;
+    --max:920px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.65;font-size:16px;
+  }
+  .page{max-width:var(--max);margin:0 auto;padding:40px 24px 64px}
+  .author{
+    display:flex;align-items:center;gap:20px;
+    padding:20px 24px;margin-bottom:32px;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--line);border-radius:16px;
+  }
+  .author-photo{
+    width:72px;height:72px;border-radius:50%;object-fit:cover;
+    border:2px solid var(--line);flex-shrink:0;
+  }
+  .author-name{font-size:clamp(28px,5vw,40px);font-weight:800;margin:0;line-height:1.2;letter-spacing:.02em}
+  .author-role{color:var(--muted);font-size:14px;font-weight:500;letter-spacing:0;margin-left:10px;vertical-align:middle}
+  h1.title{
+    font-size:clamp(28px,5vw,40px);line-height:1.2;margin:0 0 8px;
+    letter-spacing:.02em;
+  }
+  h1.title .accent{color:var(--a1)}
+  .lead{color:var(--muted);font-size:15px;margin-bottom:36px}
+  h2.section{
+    font-size:20px;font-weight:800;letter-spacing:.08em;
+    color:var(--a1);margin:40px 0 16px;
+  }
+  h2.section::before{content:"";display:inline-block;width:10px;height:10px;
+    background:var(--a1);border-radius:50%;margin-right:12px;
+    box-shadow:0 0 0 4px rgba(56,189,248,.2)}
+  .card{
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--line);border-radius:16px;padding:24px 28px;
+    margin-bottom:16px;
+  }
+  .card p{margin:0 0 12px}
+  .card p:last-child{margin-bottom:0}
+  .hosts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+  @media(max-width:640px){.hosts{grid-template-columns:1fr}}
+  .host{
+    text-align:center;padding:20px 16px;
+    background:rgba(56,189,248,.04);border:1px solid var(--line);border-radius:14px;
+  }
+  .host img{
+    width:120px;height:120px;border-radius:50%;object-fit:cover;
+    border:3px solid var(--line);margin-bottom:12px;
+  }
+  .host.kewpie .photo{
+    width:120px;height:120px;margin:0 auto 12px;
+    border-radius:12px;border:3px solid var(--line);
+    overflow:hidden;background:#fff;
+  }
+  .host.kewpie .photo img{
+    width:100%;height:100%;object-fit:cover;
+    transform:scale(1.12) translateY(-4%);transform-origin:center center;
+    border:none;border-radius:0;margin:0;padding:0;display:block;
+  }
+  .host-name{font-size:18px;font-weight:800;margin:0 0 4px}
+  .host-role{font-size:12px;color:var(--a1);font-weight:700;margin:0 0 8px}
+  .host-voice{font-size:13px;color:var(--muted);margin:0 0 8px}
+  .host-desc{font-size:13px;color:#c7d4ea;margin:0;line-height:1.55}
+  .deliverables{list-style:none;padding:0;margin:16px 0 0}
+  .deliverables li{
+    padding:12px 16px;margin-bottom:8px;
+    background:rgba(52,211,153,.06);border:1px solid var(--line);border-radius:10px;
+    font-size:14px;
+  }
+  .deliverables li strong{color:var(--a2)}
+  .screenshot{
+    width:100%;border-radius:12px;border:1px solid var(--line);
+    margin-top:16px;display:block;
+  }
+  .flow{
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+    font-size:13px;margin-top:12px;
+  }
+  .flow-step{
+    background:var(--panel2);border:1px solid var(--line);
+    border-radius:10px;padding:10px 14px;color:#d7e0f0;
+  }
+  .flow-arrow{color:var(--muted);font-weight:700}
+  .stack{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px;
+  }
+  .stack-item{
+    padding:14px 16px;border:1px solid var(--line);border-radius:10px;
+    background:rgba(167,139,250,.06);
+  }
+  .stack-item .label{font-size:11px;color:var(--a4);font-weight:800;letter-spacing:.06em;margin-bottom:4px}
+  .stack-item .val{font-size:14px;color:#dbe4f2}
+  ul.points{margin:8px 0 0;padding-left:20px}
+  ul.points li{margin-bottom:8px;font-size:15px;color:#d7e0f0}
+  .highlight{color:var(--a3);font-weight:700}
+  .foot{
+    margin-top:48px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:12px;text-align:center;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ⑥ 作成者 -->
+  <header class="author">
+    <img class="author-photo" src="ota.png" alt="太田真樹">
+    <div>
+      <p class="author-name">太田真樹 <span class="author-role">武蔵村山病院、小児科専門医、小児アレルギー専門医</span></p>
+    </div>
+  </header>
+
+  <h1 class="title">週刊・<span class="accent">小児アレルギー</span>ラジオ</h1>
+  <p class="lead">PubMed の新着論文を、毎週自動で「聞けるラジオ」に変えて届ける仕組みの図解</p>
+
+  <!-- ④ 話者紹介 -->
+  <h2 class="section">話者紹介</h2>
+  <div class="card">
+    <div class="hosts">
+      <div class="host">
+        <img src="ota.png" alt="OTA">
+        <p class="host-name">OTA</p>
+        <p class="host-role">進行役</p>
+        <p class="host-voice">声: Algieba（Gemini TTS）</p>
+        <p class="host-desc">ゆっくり・短く・落ち着いて・明瞭。聞き手として論文の要点を引き出す。</p>
+      </div>
+      <div class="host kewpie">
+        <div class="photo"><img src="kewpie-doctor.png" alt="キュピ太郎先生"></div>
+        <p class="host-name">キュピ太郎先生</p>
+        <p class="host-role">解説役</p>
+        <p class="host-voice">声: Laomedeia（Gemini TTS）</p>
+        <p class="host-desc">甲高いハイテンション。「だね」「だよ」「〜きゅぴ」の語尾で、小児アレルギーを解説する。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 作ったもの -->
+  <h2 class="section">作ったもの</h2>
+  <div class="card">
+    <p>毎週、Notion に届く完成品の一例（2026年8月12日号）。</p>
+    <ul class="deliverables">
+      <li><strong>対話台本</strong> — 進行役 OTA × 解説役 キュピ太郎先生の2人掛け</li>
+      <li><strong>音声（MP3）</strong> — Gemini マルチスピーカー TTS、約8〜10分</li>
+      <li><strong>インフォグラフィック</strong> — 各論文の Take Home 3点を1枚に</li>
+      <li><strong>Notion ページ</strong> — 音声をページ内でそのまま再生できる</li>
+    </ul>
+    <img class="screenshot" src="notion-screenshot.png" alt="Notionに届いた週刊・小児アレルギーラジオのページ">
+  </div>
+
+  <!-- 解決する面倒・課題 -->
+  <h2 class="section">解決する面倒・課題</h2>
+  <div class="card">
+    <p><span class="highlight">小児アレルギー領域の新着論文が多すぎて、毎週追いきれない。</span></p>
+    <p>1週間で PubMed に数十〜百件以上ヒットすることも珍しくありません（例: 99件ヒット → 質フィルタ後17件 → 厳選3本）。</p>
+    <p>さらに、論文を「読む」という手間を減らし、<span class="highlight">昼休みに耳から情報をインプット</span>できる形に変えたい。移動中や短い休憩時間でも、臨床に近いトピックをキャッチアップできるようにする。</p>
+  </div>
+
+  <!-- 作りたいと思った理由 -->
+  <h2 class="section">作りたいと思った理由</h2>
+  <div class="card">
+    <p>自分の専門である<strong>小児アレルギー</strong>の新着を逃したくないから。臨床に直結する領域だからこそ、毎週のキャッチアップに意味がある。</p>
+    <p>論文を読む時間は昼休みにしか取れない。だから「読む」より「聞く」に寄せた。</p>
+    <p>きっかけの参考にしたのは、他領域の「週刊ラジオ」自動配信の事例（小児腎臓病ラジオなど）。「自分の領域でも同じことができる」と思った。</p>
+  </div>
+
+  <!-- 工夫したポイント -->
+  <h2 class="section">工夫したポイント</h2>
+  <div class="card">
+    <ul class="points">
+      <li><strong>認証を2系統に分けた</strong> — PubMed / Notion は Claude コネクタ経由、Gemini 音声は環境変数から直接。ネットワーク設定をいじらずに動く。</li>
+      <li><strong>番組設定を1ファイルに集約</strong> — <code>prompts/weekly_radio_prompt.md</code> の設定欄だけ編集すれば、次回の自動実行から反映。Routine のプロンプトは触らない。</li>
+      <li><strong>Take Home 3点 + インフォグラフィック</strong> — 聞いたあと、図で復習できる。各論文の臨床的含意を持ち帰りやすくした。</li>
+      <li><strong>GitHub raw URL → Notion 埋め込み</strong> — MP3 と PNG を push し、Notion ページ内で音声再生・画像表示できる形にした。</li>
+    </ul>
+  </div>
+
+  <!-- 苦戦したポイント -->
+  <h2 class="section">苦戦したポイント</h2>
+  <div class="card">
+    <ul class="points">
+      <li><strong>進行役 OTA と キュピ太郎先生に合う声の選定</strong> — Gemini TTS のプリセットを何度も試した。OTA は Algieba（ゆっくり・明瞭）、キュピ太郎先生は Laomedeia（ハイテンション）。台本の語尾（「だね」「だよ」「きゅぴ」）と TTS のスタイル指示も調整した。</li>
+      <li><strong>医学的内容の正確性</strong> — 自動要約なので、臨床判断の根拠には使えない。台本・ページには必ず PMID を入れ、原著にあたる前提で設計した。</li>
+    </ul>
+  </div>
+
+  <!-- ① 仕組みの流れ -->
+  <h2 class="section">仕組みの流れ</h2>
+  <div class="card">
+    <p>毎週月曜、Claude Routine が新しいセッションを起動し、以下を自律実行する。</p>
+    <div class="flow">
+      <span class="flow-step">毎週月曜 Routine 発火</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">PubMed 直近7日検索</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">3本厳選・台本執筆</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">Gemini TTS → MP3</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">インフォグラフィック PNG</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">GitHub push</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">Notion 掲載</span>
+    </div>
+    <p style="margin-top:16px;font-size:14px;color:var(--muted)">一度設定すれば、以降は何もしなくても毎週届く。</p>
+  </div>
+
+  <!-- ② 技術スタック -->
+  <h2 class="section">技術スタック</h2>
+  <div class="card">
+    <div class="stack">
+      <div class="stack-item">
+        <div class="label">定期実行</div>
+        <div class="val">Claude Code Routine（毎週月曜）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">文献検索</div>
+        <div class="val">PubMed（MCP コネクタ）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">台本・要約</div>
+        <div class="val">Claude（手順書に従い生成）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">音声合成</div>
+        <div class="val">Gemini TTS（マルチスピーカー）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">配信・保存</div>
+        <div class="val">GitHub（Public / raw URL）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">掲載</div>
+        <div class="val">Notion（MCP コネクタ）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">図解生成</div>
+        <div class="val">自己完結 HTML → PNG（Playwright）</div>
+      </div>
+      <div class="stack-item">
+        <div class="label">設定の正典</div>
+        <div class="val">prompts/weekly_radio_prompt.md</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">週刊・小児アレルギーラジオ — 図解</footer>
+</div>
+</body>
+</html>
