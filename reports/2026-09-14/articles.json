@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-14",
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-09-07",
+    "date_to": "2026-09-14",
+    "total_hits": 81,
+    "filtered_hits_review_rct_guideline": 12
+  },
+  "topics": [
+    {
+      "pmid": "42713509",
+      "title": "Mepolizumab in Pediatric Severe Eosinophilic Asthma: A Review of Efficacy, Safety, and Clinical Applications",
+      "journal": "Journal of Inflammation Research",
+      "date": "2026-09-04",
+      "doi": "10.2147/JIR.S551252",
+      "url": "https://doi.org/10.2147/JIR.S551252",
+      "study_type": "レビュー",
+      "one_line": "小児重症好酸球性喘息におけるメポリズマブ(抗IL-5抗体)の有効性・安全性・臨床応用を総括したレビュー。増悪抑制やステロイド減量効果は一貫して支持されるが、小児のエビデンス基盤は成人より小さい。",
+      "summary": "メポリズマブはインターロイキン5(IL-5)を標的とするヒト化モノクローナル抗体で、6歳以上の小児重症好酸球性喘息に対する追加治療として承認されている。小児のPK/PD試験では血中好酸球数の著明かつ持続的な抑制が示され、ランダム化比較試験および実臨床データの双方で重症増悪の頻度低下が一貫して報告されている。ステロイド減量効果や医療資源利用の減少も示唆される一方、肺機能や日々の症状コントロールに対する効果は一貫性に乏しい。小児での安全性・忍容性は概ね良好とされるが、長期データはなお限定的である。現行のバイオロジクス治療の選択肢の中では、好酸球性炎症・反復増悪・ステロイド負荷が主要な治療標的となる場合に位置づけられるが、小児のエビデンス基盤は成人と比べて依然として小さく、他のバイオロジクスとの頭打ち比較試験も存在しない。より精密な奏効予測因子の同定、至適な治療期間、中止・切り替えの基準、そして早期のバイオロジクス介入が疾患修飾効果を持つ可能性など、重要な課題が残されている。",
+      "take_home": [
+        "メポリズマブ(抗IL-5抗体)は6歳以上の小児重症好酸球性喘息への追加治療として承認されており、血中好酸球の著明な抑制と重症増悪の抑制が一貫して報告されている",
+        "ステロイド減量効果や医療資源利用の減少も示唆される一方、肺機能・日々の症状コントロールへの効果は研究間で一貫性に乏しい",
+        "小児での長期データやバイオロジクス同士の頭打ち比較試験はまだなく、最適な治療期間・中止基準・より精密な奏効予測因子の確立が今後の課題"
+      ]
+    },
+    {
+      "pmid": "42726140",
+      "title": "Clinical and immunological predictors of baked egg tolerance in children with IgE-mediated hen's egg allergy: a cross-sectional diagnostic accuracy study",
+      "journal": "European Journal of Pediatrics",
+      "date": "2026-09-11",
+      "doi": "10.1007/s00431-026-07398-0",
+      "url": "https://doi.org/10.1007/s00431-026-07398-0",
+      "study_type": "横断的診断精度研究(単施設, n=51)",
+      "one_line": "生後12ヶ月~6歳未満のIgE依存性鶏卵アレルギー児51例で加熱卵(ベイクドエッグ)経口負荷試験を実施し、オボムコイド特異的IgEが耐性予測の最有力バイオマーカーであることを示した診断精度研究。",
+      "summary": "IgE依存性鶏卵アレルギーの児にとって、加熱卵(ベイクドエッグ)の早期導入は食事の多様化を可能にし、将来の生卵・調理卵に対する耐性獲得を促す実践的な戦略とされる。本研究はバルセロナの三次医療機関で、IgE依存性鶏卵アレルギーが確定した生後12ヶ月~6歳未満の児を対象に標準化された非盲検ベイクドエッグ経口負荷試験(BE-OFC)を実施し、血清特異的IgE(sIgE)・皮膚プリックテスト(SPT)・好塩基球活性化試験(BAT)の耐性予測能をROC解析で評価した。51例がBE-OFCを完遂し、56.9%が耐性を示した。既往にアナフィラキシーがある児では耐性率がやや低い傾向(35.7% vs 64.9%)にあったが統計的有意差はなく、非耐性22例中エピネフリン投与を要したのはわずか2例と、専門施設・医師管理下での実施は概ね安全であった。単一バイオマーカーとしてはオボムコイド特異的IgE(カットオフ4.48 kUA/L、感度68.2%、特異度79.3%、AUC 0.71)が最も判別能が高く、多変量解析でも独立した関連因子として残った一方、SPTやBATは有用な判別には至らなかった。著者らは、これらの結果はあくまで探索的なものであり、多施設での前向き検証が必要と結論している。",
+      "take_home": [
+        "ベイクドエッグ経口負荷試験を受けた児の56.9%が耐性を示し、既往にアナフィラキシーがある児でも医師管理下では概ね安全に実施できた(非耐性22例中エピネフリン投与は2例のみ)",
+        "単一バイオマーカーとしてはオボムコイド特異的IgE(カットオフ4.48 kUA/L)が最も判別能が高く(AUC 0.71)、皮膚プリックテストや好塩基球活性化試験は有用な判別には至らなかった",
+        "単施設・n=51の探索的研究であり、多施設での前向き検証が必要。実際の食物経口負荷試験の適応は必ず専門医の評価のもとで判断すべき"
+      ]
+    },
+    {
+      "pmid": "42728529",
+      "title": "A New Phototherapy Regimen Coupled with Oral Vitamin D Supplementation, for the Long-Term Control of Atopic Dermatitis: A French Multicenter, Randomized, Crossover, Pragmatic Trial (PRADA trial)",
+      "journal": "Dermatology and Therapy",
+      "date": "2026-09-11",
+      "doi": "10.1007/s13555-026-01914-8",
+      "url": "https://doi.org/10.1007/s13555-026-01914-8",
+      "study_type": "フランス多施設ランダム化クロスオーバー実践的試験(2×2要因デザイン, NCT02537509)",
+      "one_line": "15歳以上の中等症~重症アトピー性皮膚炎患者を対象に、狭帯域UVB光線療法とビタミンD補充の上乗せ効果を検証したPRADA試験。ビタミンDは統計的有意差はあったが事前設定の臨床的に意味のある最小差には届かず、光線療法は明確な上乗せ効果を示さなかった。",
+      "summary": "アトピー性皮膚炎(AD)の世界的な疾病負荷は今後20年でさらに増加すると見込まれ、高額な新規治療薬へのアクセスが制限される地域が多い中、安価で普及可能な治療法の検証が求められている。PRADA試験は、2015年から2023年にかけてフランスの16施設で実施された多施設共同試験で、標準的な外用抗炎症治療に上乗せする形で、(1)狭帯域UVB光線療法 vs 経過観察の非盲検クロスオーバー比較、(2)ビタミンD vs プラセボの二重盲検並行群間比較、という2つの独立したランダム化を同一集団内で組み合わせた。対象は15歳以上・中等症~重症(IGA>2)のAD患者で、生涯の光線療法歴が100回未満の者。主要評価項目は、1年間反復測定したPO-SCORADスコアと、10月~3月の外用抗炎症薬の累積使用量からなる階層的複合エンドポイントだった。ビタミンD群(53例)とプラセボ群(57例)、うち解析対象93例において、ビタミンDはプラセボと比べPO-SCORADスコアが有意に低かった(平均差-5.6点、95%CI -12.1~-1.78)ものの、この効果量は事前に設定された臨床的に意味のある最小差(9点)を下回った。狭帯域UVB光線療法はPO-SCORADスコアに有意な効果を示さなかった(平均差1.25点)。有害事象の発生率は患者100人月あたり0.33件で、主に非重篤な光線過敏反応(38件)だった。著者らは、本試験はリクルート不足により検出力不足(underpowered)であったとし、狭帯域UVB光線療法の長期的なAD管理への明確な上乗せ効果は示されず、ビタミンD補充の効果は統計的に有意ではあるものの臨床的関連性の閾値には達しなかったと結論している。",
+      "take_home": [
+        "対象は15歳以上(思春期を含む)の中等症~重症AD患者110例。狭帯域UVB光線療法の上乗せは、標準治療と比べPO-SCORADスコアに有意な改善を示さなかった",
+        "ビタミンD補充群はプラセボ群よりPO-SCORADスコアが統計的に有意に低かった(平均差-5.6点)が、事前に設定した『臨床的に意味のある最小差』(9点)には届かず、これだけで日常診療を変える根拠にはならない",
+        "リクルート不足で検出力不足(underpowered)の試験であり、『統計的に有意=臨床的に重要』とは限らないことを示す好例。今後さらに大規模な検証試験が必要"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {
+      "pmid": "42704292",
+      "title": "Inhaled corticosteroids with short-acting β-agonists as rescue therapy for asthma: a systematic review and meta-analysis of randomized controlled trials",
+      "reason": "臨床的インパクトは大きいが、組み入れられた5RCTは主に成人対象で小児特化データが乏しく、著者ら自身も小児対象試験が今後の課題と明記しているため見送り"
+    },
+    {
+      "pmid": "42730150",
+      "title": "Effects of aquatic exercise therapy on lung function in patients with asthma: a systematic review and meta-analysis",
+      "reason": "小児サブグループでFEV改善が有意という興味深い知見だが、対象13RCT・391例と小規模で次点候補として保留"
+    },
+    {
+      "pmid": "42731672",
+      "title": "Household food hardship and asthma morbidity among United States children with current asthma",
+      "reason": "米国の社会的決定要因に関する重要な知見だが、直接の臨床介入や検査値の話ではなく今週の3本の構成(治療薬・診断・光線療法)とはテーマの粒度が異なるため見送り(次点候補)"
+    },
+    {
+      "pmid": "42732250",
+      "title": "Herbal Extracts and Plant-Derived Bioactives in Atopic Dermatitis: Evidence, Mechanisms, Pediatric Safety, and Translational Priorities",
+      "reason": "小児安全性に触れる網羅的レビューだが、臨床試験としての質はまだ限定的で、今週は同領域からPRADA試験(RCT)を優先"
+    },
+    {
+      "pmid": "42726367",
+      "title": "Gram-Positive and Gram-Negative Probiotic Extracellular Vesicles: Mechanisms of Immune Modulation and Therapeutic Opportunities in Atopic Dermatitis",
+      "reason": "基礎・機序中心のレビューで、臨床応用はまだ前臨床段階のため見送り"
+    },
+    {
+      "pmid": "42730309",
+      "title": "Immunization with Virus-Like Particles Displaying Ara h 2-Derived Peptides to Mitigate Peanut Allergy",
+      "reason": "新規性は高いが、マウスモデルでの前臨床研究段階であり臨床応用にはまだ距離があるため見送り"
+    },
+    {
+      "pmid": "42724277",
+      "title": "Chronic respiratory morbidity and wheeze after preterm birth: a narrative review",
+      "reason": "臨床的に重要なテーマだが、直近の号(2026-09-07)で気道関連レビュー(HFNC)を取り上げたばかりで主題が近接するため見送り"
+    }
+  ]
+}
