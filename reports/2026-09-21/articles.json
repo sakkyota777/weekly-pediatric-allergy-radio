@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-21",
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-09-14",
+    "date_to": "2026-09-21",
+    "total_hits": 119,
+    "filtered_hits_review_rct_guideline": 27
+  },
+  "topics": [
+    {
+      "pmid": "42748429",
+      "title": "Trial of a Maternal Diet Rich in Eggs and Peanuts to Reduce Infant Allergy",
+      "journal": "The New England Journal of Medicine",
+      "date": "2026-09-17",
+      "doi": "10.1056/NEJMoa2605659",
+      "url": "https://doi.org/10.1056/NEJMoa2605659",
+      "study_type": "オーストラリア多施設ランダム化比較試験(PrEggNut試験, n=2137)",
+      "one_line": "食物アレルギーの家族歴がある妊婦を対象に、妊娠23週未満~産後4ヶ月まで卵・ピーナッツを多く摂る母体食を検証したRCT。児のIgE依存性卵/ピーナッツアレルギー発症率を有意には減らさなかった。",
+      "summary": "食物アレルギーは出生前・母乳を通じたアレルゲン曝露が発症に関わる可能性が指摘されてきたが、母体の摂取量を増やす介入のランダム化比較試験は乏しかった。本試験では、児に少なくとも2人の血縁一等・二等親族に医師診断のアレルギー疾患がある妊婦を対象に、卵6個以上・ピーナッツ60個以上/週を摂取する「高摂取群」(1070例)と、卵3個以下・ピーナッツ30個以下/週の「標準群」(1067例)に1:1で無作為割り付けし、妊娠23週未満から産後4ヶ月の授乳期まで継続した。主要評価項目は児が1歳時点で示すIgE依存性卵/ピーナッツアレルギーの有無。高摂取群では7.8%(83/1066)、標準群では8.4%(89/1064)がアレルギーを発症し、両群に有意差はなかった(相対リスク0.93、95%信頼区間0.69~1.26、p=0.65)。安全性については両群でほぼ同様だった。著者らは、妊娠中・授乳中に卵・ピーナッツを多量に摂取しても、児のIgE依存性アレルギー発症リスクを標準的な摂取量と比べて有意には低下させないと結論している。",
+      "take_home": [
+        "母体が卵6個以上・ピーナッツ60個以上/週を摂る『高摂取』食は、児のIgE依存性卵/ピーナッツアレルギー発症率を有意には減らさなかった(7.8% vs 8.4%)",
+        "現行ガイドラインが重視するのは乳児『本人』への早期・計画的な直接摂取であり、母親側の摂取量を増やす介入で予防効果を得られるというエビデンスは今回支持されなかった",
+        "母親に厳格な食事制限をかける必要はない一方、『たくさん食べれば予防できる』という期待にも根拠はなく、引き続き乳児本人への早期導入が予防の中心であることに変わりはない"
+      ]
+    },
+    {
+      "pmid": "42741706",
+      "title": "Biologics for Children and Adolescents with Asthma: A Systematic Review and Exploratory Indirect Comparative Analysis",
+      "journal": "Journal of Asthma and Allergy",
+      "date": "2026-09-10",
+      "doi": "10.2147/JAA.S629339",
+      "url": "https://doi.org/10.2147/JAA.S629339",
+      "study_type": "システマティックレビュー・探索的間接比較(GRADE評価)",
+      "one_line": "小児・思春期喘息に対するバイオロジクス3剤(オマリズマブ・デュピルマブ・メポリズマブ)のプラセボ対照試験を用いた探索的間接比較。いずれもプラセボに対する増悪抑制効果は確認されたが、剤間の優劣を決めるだけの根拠はまだ乏しい。",
+      "summary": "2型炎症を標的とするバイオロジクスは小児・思春期の難治性喘息の治療選択肢を広げているが、小児での直接比較(head-to-head)試験はまだ存在しない。本レビューは2026年5月までPubMed・Embase・ClinicalTrials.govなどを検索し、小児・思春期喘息を対象としたプラセボ対照RCTのうちオマリズマブ・デュピルマブ・メポリズマブの3試験を主要解析に組み入れた。主要評価項目は年間増悪率(AER)、副次評価項目は有害事象(AE)・重篤有害事象(SAE)。プラセボを共通対照としたBucher法による間接比較では、各薬剤はいずれもプラセボと比べAERを減少させた。デュピルマブ対メポリズマブの調整間接推定値は1未満(デュピルマブが優る方向)だったが、試験間の臨床的異質性が大きく、根拠に乏しいスパースなデータに基づく仮説生成的な結果にとどまる。安全性については、オマリズマブ・デュピルマブは全体AEの明確な増加とは関連しなかった一方、メポリズマブはMUPPITS-2試験で幅広いAE報告が多かった。SAEの推定は不精確だった。エビデンス確実性はプラセボ対比の増悪抑制効果については中等度、薬剤間比較については低、安全性については低~非常に低いレベルにとどまり、著者らは表現型別の直接比較試験が今後必要と結論している。",
+      "take_home": [
+        "小児喘息に対するオマリズマブ・デュピルマブ・メポリズマブは、いずれもプラセボと比べ増悪を減らすランダム化比較試験のエビデンスがある(確実性は中等度)",
+        "薬剤同士を直接比較した試験はまだなく、間接比較で示された差(デュピルマブがメポリズマブに優る可能性など)は仮説段階であり、現時点で優劣を決める根拠にはならない",
+        "安全性の薬剤間比較はエビデンスの確実性が低~非常に低く、表現型に応じた直接比較試験(head-to-head)の実施が今後の重要な課題"
+      ]
+    },
+    {
+      "pmid": "42760885",
+      "title": "Chronic cough in children and adolescents: A pragmatic, algorithm-based position paper of the Italian Society of Pediatric Allergy and Immunology",
+      "journal": "Allergologia et immunopathologia",
+      "date": "2026-09-01",
+      "doi": "10.15586/aei.v54i5.1684",
+      "url": "https://doi.org/10.15586/aei.v54i5.1684",
+      "study_type": "イタリア小児アレルギー・免疫学会(SIAIP)による実践的ポジションペーパー(専門家合意・アルゴリズム改訂)",
+      "one_line": "SIAIPが2020年版を改訂し、小児・思春期の慢性咳嗽に対する実践的な評価アルゴリズムを提示。red flagsの早期同定と、咳の性状(湿性/乾性)に基づく段階的評価、経験的治療の期限付き再評価を核とする。",
+      "summary": "慢性咳嗽は小児科外来受診の一般的な理由であり、繰り返す受診・保護者の不安・不必要な検査や治療につながりやすい。SIAIPの多職種専門家パネルが2020年版文書を国際ガイドラインと最新知見を踏まえて改訂した。提案アルゴリズムはまずred flags(警告徴候)や疾患特異的な手がかりの早期同定を優先し、専門的検査・紹介の要否を判断する。警告徴候がない場合は、咳の性状(湿性咳嗽か乾性咳嗽か)がその後のマネジメントを決める。湿性咳嗽は遷延性細菌性気管支炎など感染性病態の認識と適切な治療が中心となる。乾性咳嗽は咳優位型喘息→上気道咳症候群→胃食道逆流関連機序→機能性咳嗽の順に順次評価する。各段階で経験的治療の期間はあらかじめ限定し、定めた時期に再評価、無効なら中止して診断を見直すことを重視する。抗菌薬・吸入ステロイド・アルギン酸塩・プロトンポンプ阻害薬の漫然長期投与を避け、実臨床でのばらつきを減らすことを狙いとしており、著者らはこのアルゴリズムの前向き検証を今後の課題としている。",
+      "take_home": [
+        "小児の慢性咳嗽ではまず『red flags(警告徴候)』の有無を確認し、あれば専門的検査・紹介を優先する",
+        "警告徴候がなければ、咳が湿性か乾性かで評価の道筋が変わる。湿性咳嗽はまず遷延性細菌性気管支炎など感染性病態を、乾性咳嗽は咳優位型喘息→上気道咳症候群→逆流関連→機能性咳嗽の順に検討する",
+        "経験的治療(抗菌薬・吸入ステロイド・アルギン酸塩・PPIなど)は期限を決めて『効くかどうか』を再評価し、漫然投与を避けることが不要な検査・治療を減らす鍵"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {
+      "pmid": "42760882",
+      "title": "Products of compound probiotics combined with zinc and vitamin B ameliorate the risk of food allergy",
+      "reason": "食物アレルギー児796例を対象とした複合プロバイオティクス+亜鉛+ビタミンB付加のRCT。効果量が非常に大きい割に盲検化・プラセボ対照の詳細が不明瞭で質の評価が難しく、掲載誌の格も限定的なため、『食物アレルギー予防』枠は今週NEJMのPrEggNut試験を優先し見送り"
+    },
+    {
+      "pmid": "42737568",
+      "title": "Effect of Dupilumab on Allergen-Specific IgE Levels and Clinical Tolerance in Patients with Food Allergy: A Systematic Review",
+      "reason": "デュピルマブによる食物アレルギー特異的IgE低下と臨床的寛容についてのシステマティックレビュー。免疫学的指標の改善は一貫するが経口負荷試験での耐性獲得への効果は乏しく新規データも限定的なため、今週は喘息バイオロジクスの間接比較を優先し次点候補として保留"
+    },
+    {
+      "pmid": "42738923",
+      "title": "Prenatal, Perinatal and Postnatal Exposures and Clinical Factors of Food Allergy Prevention: A Review for the First 1000 Days of Life from the SIAIP Primary and Secondary Prevention of Allergic Diseases Commission",
+      "reason": "SIAIPによる『最初の1000日』食物アレルギー予防の総説。重要なテーマだが今週取り上げるPrEggNut試験(母体食)とテーマが近接するため主題の重複を避けて見送り(次点候補)"
+    },
+    {
+      "pmid": "42747714",
+      "title": "Type 2-low Asthma: Epidemiology, Multiomics, and Emerging Therapies",
+      "reason": "Type2-low喘息の疫学・治療総説。小児データも触れるが成人中心の記述が多く、今週は小児バイオロジクスの直接的な間接比較エビデンスを優先"
+    },
+    {
+      "pmid": "42756976",
+      "title": "CRD-guided step-up care for pediatric dust mite allergy: A systematic review of evidence gaps and global disparities (2014-2025)",
+      "reason": "コンポーネント分解診断(CRD)に基づくダニアレルギー段階治療フレームワークのシステマティックレビュー。概念モデルの域を出ず前向き検証が必要な段階のため見送り"
+    },
+    {
+      "pmid": "42751182",
+      "title": "Childhood asthma and the microbiome: from gut-lung axis mechanisms to precision prevention strategies",
+      "reason": "小児喘息と腸内・気道マイクロバイオームに関する総説。機序中心で探索段階のバイオマーカーが多く、臨床応用にはさらなるエビデンスの蓄積が必要なため見送り"
+    }
+  ]
+}
