@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-28",
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-09-21",
+    "date_to": "2026-09-28",
+    "total_hits": 112,
+    "filtered_hits_review_rct_guideline": 26
+  },
+  "topics": [
+    {
+      "pmid": "42794167",
+      "title": "Evidence-Based Clinical Recommendations on the Appropriateness of Prescriptions and Diagnostic Tests in Paediatric Allergology: Focus on IgE-Mediated and Non-IgE Mediated Food Allergy, Eosinophilic Gastrointestinal Disease, Urticaria, Angioedema and Atopic Dermatitis",
+      "journal": "Children (Basel, Switzerland)",
+      "date": "2026-08-26",
+      "doi": "10.3390/children13091146",
+      "url": "https://doi.org/10.3390/children13091146",
+      "study_type": "イタリア国立衛生研究所(ISS)主導・多職種専門家パネルによるエビデンスに基づく臨床推奨(PICOフレームワーク+GRADE評価、2015〜2026年の系統的レビューに基づく)",
+      "one_line": "小児アレルギー診療における『検査・処方の適切性』に関する包括的推奨。食物アレルギー・好酸球性消化管疾患・蕁麻疹・血管性浮腫・アトピー性皮膚炎の5領域で、過剰検査を避けつつ必要な検査を明確にする実践的枠組みを提示。",
+      "summary": "小児アレルギー診療では、診断精度・治療方針・医療資源の使い方・患者アウトカムに直結する『適切な検査選択』が課題となってきた。本研究はイタリア国立衛生研究所(ISS)の枠組みのもと、多職種専門家パネルがPICO形式で臨床疑問を設定し、2015年から2026年までの文献をGRADE法で評価して推奨を作成した。食物アレルギーでは、特異的IgEなどの感作検査だけでは診断確定に不十分であり、経口負荷試験(OFC)が診断確定の中心であり続けると位置づけた。好酸球性消化管疾患では内視鏡下生検が診断に必須とされた。慢性蕁麻疹では専門医への紹介を推奨する一方、示唆的な病歴がない場合のルーチンのアレルギー検査は避けるべきとした。血管性浮腫では、ヒスタミン依存性かブラジキニン依存性かの鑑別が重要であり、遺伝性・後天性が疑われる場合は的を絞った検査を行うべきとした。アトピー性皮膚炎では標準化された重症度評価に基づき、生物学的製剤の適応も含めた管理方針を決定すべきとし、患者・家族教育を診療の中心要素と位置づけている。著者らは、これらの推奨が診療の標準化と不必要な検査の削減、医療資源の公平な活用につながる枠組みになるとしている。",
+      "take_home": [
+        "食物アレルギーは血液・皮膚の感作検査『陽性』だけでは診断確定できず、経口負荷試験(OFC)が診断の中心であることが改めて強調された",
+        "示唆的な病歴のない慢性蕁麻疹に、ルーチンでアレルギー検査を広く行うことは推奨されない。血管性浮腫では『ヒスタミン性か、ブラジキニン性か』の鑑別が方針を左右する",
+        "アトピー性皮膚炎は標準化された重症度スコアに基づいて生物学的製剤の適応などを判断し、患者・家族への教育を診療の中心に据えることが推奨されている"
+      ]
+    },
+    {
+      "pmid": "42779388",
+      "title": "Update on Pediatric asthma management: Recent advances",
+      "journal": "Pediatric Allergy and Immunology",
+      "date": "2026-09",
+      "doi": "10.1111/pai.70480",
+      "url": "https://doi.org/10.1111/pai.70480",
+      "study_type": "総説(Great Ormond Street Hospital・Royal Brompton Hospital・Imperial College Londonの小児呼吸器アレルギーグループによる最新知見レビュー)",
+      "one_line": "小児喘息治療は『発作時だけ短時間作用性β刺激薬(SABA)』から、吸入ステロイドを組み込んだ抗炎症性リリーバー療法(AIR)やメンテナンス&リリーバー療法(MART)へと重心が移りつつある。重症例ではバイオマーカーに基づく生物学的製剤の個別選択が広がりつつある。",
+      "summary": "小児喘息は世界的に最も頻度の高い慢性呼吸器疾患であり、近年の治療の力点は『症状が出たときに抑える』ことから『気道炎症を早期からコントロールし増悪を防ぐ』ことへと移りつつある。本総説は、吸入ステロイド(ICS)と気管支拡張薬を組み合わせた抗炎症性リリーバー療法(AIR)や、日常の維持療法と発作時吸入を同一製剤でまかなうメンテナンス&リリーバー療法(MART)を取り上げ、小児対象の臨床試験でSABA単独のリリーバーと比較して一部のサブグループで急性増悪の負担を減らせる可能性を示すデータを紹介している。さらに大規模試験が進行中であるとしつつ、重症喘息については2型気道炎症の理解の進展により、IgE・IL-5・IL-5受容体・IL-4/IL-13シグナル・胸腺間質性リンパ球新生因子(TSLP)を標的とする生物学的製剤が登場し、成人試験では現在承認されている全ての薬剤で増悪減少が示されていると整理した。小児のエビデンスは成人よりまだ限られるとしつつ、現時点での小児重症喘息への効果データをまとめている。血中好酸球数・呼気一酸化窒素・血清IgEなどバイオマーカーに基づく薬剤選択の重要性が増している一方、小児に最適なバイオマーカーの検証や、治療期間・中止基準には依然として不確実性が残ると指摘し、今後は個別化医療を軸に、抗炎症性リリーバー戦略と標的生物学的製剤を組み合わせて増悪を抑え長期の肺機能を守る方向に進むと展望している。",
+      "take_home": [
+        "小児喘息治療は、発作時にSABA単独で抑える従来型から、吸入ステロイドを組み込んだ『抗炎症性リリーバー(AIR)』『メンテナンス&リリーバー(MART)』へと重心が移りつつある(大規模検証は進行中)",
+        "重症喘息では血中好酸球数・呼気一酸化窒素・IgEなどのバイオマーカーに基づき、IgEやIL-5、IL-4/IL-13経路などを狙う生物学的製剤を個別に選ぶ流れが強まっている",
+        "ただし小児での生物学的製剤のエビデンスは成人より限定的で、最適なバイオマーカーや治療期間・中止基準にはまだ不確実性が残ることも押さえておきたい"
+      ]
+    },
+    {
+      "pmid": "42797009",
+      "title": "Early-Life Nutrition: The Interplay of Nutritional, Microbial, Genetic, and Environmental Factors in Food Allergy Development and Prevention",
+      "journal": "Nutrients",
+      "date": "2026-09-16",
+      "doi": "10.3390/nu18183026",
+      "url": "https://doi.org/10.3390/nu18183026",
+      "study_type": "総説(アテネ大学小児消化器・新生児グループによる、PubMed中心の学際的文献レビュー)",
+      "one_line": "乳幼児期の栄養・腸内細菌・遺伝素因・環境曝露が複雑に絡み合って食物アレルギーの発症・予防に関わることを整理した総説。現時点で一貫したエビデンスがあるのは主要アレルゲン(ピーナッツ・卵など)の早期・継続摂取のみで、母体除去食・特定サプリ・加水分解乳・プロバイオティクス・スキンケア戦略の予防効果は確立されていないと結論。",
+      "summary": "食物アレルギーは乳幼児期に発症することが多く、その予防には出生前後の栄養状態、腸内細菌叢の形成、遺伝的・エピジェネティックな素因、皮膚バリア機能、環境曝露が複雑に関与すると考えられている。本総説は、母体栄養・母乳栄養・離乳食の進め方・アレルゲン食品の導入・食事の多様性・微量栄養素や脂肪酸摂取・腸内細菌叢の発達・遺伝/エピジェネティクス機序・環境曝露に関する文献を主題ごとに整理した。結論として、離乳期における主要アレルゲン(特にピーナッツと卵)の『適切な時期での導入と継続的な摂取』を支持するエビデンスが、一次予防策の中で最も一貫していると位置づけている。一方、母体による特定食品の除去、標的を絞った栄養補助食品、加水分解乳、プロバイオティクスやマイクロバイオームを標的とした介入、皮膚バリアケア戦略について、予防効果を確立された手法として推奨するにはエビデンスが不十分または一貫しないと整理した。腸内細菌叢の組成、薬剤曝露、大気汚染などの環境要因との関連は依然として異質性が大きく、多くが観察研究に基づくものにとどまるとしている。著者らは、食物アレルギーは単一の原因ではなく、食事・微生物叢・上皮バリア・宿主感受性・環境曝露が絡み合って生じるものであると総括している。",
+      "take_home": [
+        "食物アレルギー予防のエビデンスとして現時点で最も一貫しているのは、離乳期にピーナッツ・卵など主要アレルゲンを適切な時期に導入し、その後も継続的に摂取すること",
+        "母親の食事制限、特定のサプリメント、加水分解乳、プロバイオティクス、皮膚バリアケア戦略について、予防効果を裏付ける十分で一貫したエビデンスは今のところない",
+        "食物アレルギーの発症は栄養・腸内細菌叢・皮膚バリア・遺伝素因・環境曝露が絡み合う多因子性の現象であり、単一の対策だけで語れるものではない"
+      ]
+    }
+  ],
+  "not_selected_this_week": [
+    {
+      "pmid": "42766072",
+      "title": "Clinical Effectiveness of High-Flow Nasal Cannula and Bilevel Positive Airway Pressure in Children with Critical Asthma - A Systematic Review and Meta-Analysis",
+      "reason": "PICUでのHFNC対BiPAPのメタ解析だが、組み入れ研究がわずか5件でエビデンスの確実性が総じて低く『結論不十分』と著者ら自身が明記しているため、今週は明確な臨床メッセージを持つ話題を優先し見送り(次点候補)"
+    },
+    {
+      "pmid": "42781539",
+      "title": "Potential Determinants of Progression from Cough-Variant Asthma to Classic Asthma in Children: Evidence, Mechanisms, and Clinical Research Gaps",
+      "reason": "アトピー・気道過敏性などの危険因子整理と予測ノモグラム(AUC 0.9台)は興味深いが、前向き介入試験での検証がまだなく仮説生成段階のため見送り"
+    },
+    {
+      "pmid": "42789457",
+      "title": "Update on biologic and small molecules treatments in pediatric allergic diseases",
+      "reason": "生物学的製剤・低分子薬の総説として質は高いが、今週取り上げる小児喘息マネジメント総説(PMID 42779388)とテーマが近接し重複するため見送り"
+    },
+    {
+      "pmid": "42797010",
+      "title": "Chia Seed Allergy: Emerging Clinical Evidence, Molecular Allergens, and the Unresolved Question of Cross-Reactivity",
+      "reason": "新規食物アレルゲンとして興味深いが、臨床報告が症例報告・症例集積レベルにとどまりエビデンスが限定的なため優先度を下げた"
+    },
+    {
+      "pmid": "42800207",
+      "title": "Developmental Origins of Health and Disease: The role of Clostridioides difficile Colonization of Gut Microbiota During Infancy",
+      "reason": "乳児期のC. difficile定着とアトピー性疾患リスクの関連を扱う総説だが、機序仮説の整理が中心で臨床応用にはまだ距離があるため見送り"
+    },
+    {
+      "pmid": "42781208",
+      "title": "A Scoping Review of Risk Factors for Thunderstorm Asthma in Pediatric Patients",
+      "reason": "雷雨喘息という重要なテーマだが、抽出された39研究中小児に特化したものは5件のみとデータが乏しく、小児特有のリスクプロファイルの結論には至っていないため見送り"
+    }
+  ]
+}
