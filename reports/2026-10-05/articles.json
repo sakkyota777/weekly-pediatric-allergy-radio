@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-05",
+  "search": {
+    "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+    "datetype": "edat",
+    "date_from": "2026-09-28",
+    "date_to": "2026-10-05",
+    "total_hits": 90,
+    "filtered_hits_review_rct_guideline_metaanalysis": 18
+  },
+  "topics": [
+    {
+      "pmid": "42807464",
+      "title": "Effects of long-term inhaled corticosteroids on growth velocity and adult height in children with asthma: a systematic review and meta-analysis",
+      "journal": "Frontiers in medicine",
+      "date": "2026",
+      "doi": "10.3389/fmed.2026.1937498",
+      "study_type": "系統的レビュー・メタ解析(PRISMA 2020、PROSPERO登録、13研究を包括)",
+      "tag": "喘息",
+      "one_line": "長期ICSと小児の成長:主解析では成長速度の低下は有意でなかったが、高バイアス研究を除くと年間約0.6cmの小さな低下の可能性。",
+      "summary": "吸入ステロイド(ICS)は小児喘息の長期管理の中心だが、成長への影響は議論が続く。本メタ解析はPubMed、Embase、CENTRALなど複数データベースを2026年3月まで検索し、6か月以上ICSを使用した小児・青年を対象とする13研究を包括、うち6報が定量解析に寄与した。主解析ではICS群で成長速度が年間-0.38cm(95%CI -0.84〜0.07、I2=64%)と有意ではない低下だった。高バイアス研究を除くと-0.59cm/年(95%CI -1.10〜-0.07)と有意になり、学童期では-0.50cm/年だった。成人身長については主に1つの長期追跡研究に基づき-1.2cm(95%CI -1.90〜-0.50)と限られたエビデンスにとどまる。著者らは、確定的な影響ではなく『小さな低下の可能性』と慎重に解釈し、喘息コントロールの確立した利益と天秤にかけるべきだとしている。",
+      "take_home": [
+        "主解析では、長期ICSによる成長速度の低下は統計的に有意ではなかった(年間-0.38cm、95%CI -0.84〜0.07)",
+        "高バイアス研究を除くと年間約0.6cmの小さな低下の可能性が示されたが、確定的な結論ではない",
+        "成人身長のデータは限られる。ICSの喘息コントロール上の利益と比較し、定期的な身長のモニタリングを含め主治医と相談することが大切"
+      ],
+      "url": "https://doi.org/10.3389/fmed.2026.1937498"
+    },
+    {
+      "pmid": "42808451",
+      "title": "Sesame Immunotherapy: A Systematic Review and Narrative Synthesis",
+      "journal": "Clinical and translational allergy",
+      "date": "2026-10",
+      "doi": "10.1002/clt2.70206",
+      "study_type": "系統的レビュー(PROSPERO登録、9研究・主に小規模コホートと症例集積)",
+      "tag": "食物アレルギー",
+      "one_line": "ゴマ経口免疫療法(OIT)は脱感作率が約85〜97%と報告されたが、エビデンスは小規模研究中心でRCTが必要。",
+      "summary": "ゴマアレルギーは重篤な反応を起こしうり、自然寛解率が低く、心理社会的負担も大きい。現在の管理は厳格な除去と緊急時対応が中心である。本系統的レビューは2025年8月までを検索し、負荷試験で確認されたゴマアレルギーに免疫療法を行った研究9件を包括した。エビデンスは主に小規模コホートと症例集積だった。単一アレルゲンのゴマOITでは、プロトコルや年齢が多様ななか約85〜97%の脱感作が報告された。持続的無反応は主に小児コホートで限られた数が報告された。有害事象の多くは軽〜中等度で、エピネフリンを要する重篤反応はまれ、死亡の報告はなかった。高リスクの成人ではオマリズマブ併用で忍容性が改善した。著者らは、専門施設では有望で許容可能な安全性と述べつつ、小規模・異質性・短期追跡という限界から、最適プロトコルと長期転帰を定めるRCTが必要としている。",
+      "take_home": [
+        "ゴマOITの脱感作率は約85〜97%と報告されたが、元データは小規模なコホートや症例集積が中心",
+        "有害事象の多くは軽〜中等度で、重篤反応はまれだが、実施は専門施設での管理下が前提",
+        "最適プロトコルや長期の持続的無反応は未確立で、ランダム化比較試験が待たれる"
+      ],
+      "url": "https://doi.org/10.1002/clt2.70206"
+    },
+    {
+      "pmid": "42823603",
+      "title": "OX40 Ligand/OX40 Axis as the Inflammatory Prequel in Atopic Dermatitis: A Narrative Review",
+      "journal": "Dermatology and therapy",
+      "date": "2026",
+      "doi": "10.1007/s13555-026-01896-7",
+      "study_type": "ナラティブレビュー(OX40L/OX40経路とアトピー性皮膚炎の病態・治療標的)",
+      "tag": "アトピー性皮膚炎",
+      "one_line": "OX40L/OX40経路をアトピー性皮膚炎の『炎症の前段階(prequel)』の司令塔と位置づけ、新たな治療標的として整理したレビュー。",
+      "summary": "アトピー性皮膚炎は皮膚バリア障害と免疫調節異常を背景とする再発性の炎症性皮膚疾患で、中等症〜重症では複数の炎症経路に作用する治療が求められる。本レビューは、抗原提示細胞上のOX40リガンド(OX40L)がT細胞上のOX40に結合する共刺激シグナルに着目する。この経路は、明らかな免疫バランスの破綻に先立つ『準備状態』にあたる時期(著者らはinflammatory prequelと定義)に働き、T細胞の増殖・生存・サイトカイン産生を促して炎症経路を増幅するとされる。持続的なシグナルは記憶T細胞の産生を促し、制御性T細胞の機能を抑えて慢性炎症に寄与する。OX40LまたはOX40を標的とする抗体の臨床試験が進行中で、皮疹の改善やかゆみに対し、投与終了後も持続する効果を示した研究があると紹介している。ただし本論文はレビューであり、小児での位置づけを含め新しい証拠が蓄積中である。",
+      "take_home": [
+        "OX40L/OX40は炎症の『前段階』でT細胞を活性化する共刺激経路として、アトピー性皮膚炎の新たな治療標的と考えられている",
+        "OX40LまたはOX40を狙う抗体では、皮疹やかゆみの改善が投与後も持続しうることが報告されている",
+        "試験は進行中でありレビュー段階。小児への適用を含め、原著と今後の結果を確認する必要がある"
+      ],
+      "url": "https://doi.org/10.1007/s13555-026-01896-7"
+    }
+  ],
+  "not_selected_this_week": [
+    {
+      "pmid": "42814269",
+      "title": "Sublingual allergen immunotherapy: evidence from randomized trials, real-world studies and meta-analyses",
+      "reason": "SLIT総説。今週は食物アレルギーOITを優先"
+    },
+    {
+      "pmid": "42812187",
+      "title": "Systemic immune programming in the life course of childhood asthma",
+      "reason": "仮説的な機序論文で臨床的インパクトが限定的"
+    },
+    {
+      "pmid": "42805450",
+      "title": "Scientific Advances from Sharing URECA Data in Collaborative Analyses",
+      "reason": "データ共有の解説で臨床推奨に直結しない"
+    },
+    {
+      "pmid": "42825913",
+      "title": "Eosinophil-to-lymphocyte Ratio and Platelet-to-lymphocyte Ratio in Allergic Rhinitis",
+      "reason": "領域(鼻炎)・対象が主題から外れる"
+    }
+  ]
+}
