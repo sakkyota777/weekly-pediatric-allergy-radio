@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-12",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 98,
+ "review_rct_guideline_hits": 21,
+ "articles": [
+  {
+   "pmid": "42851480",
+   "title": "Omalizumab for pediatric allergic asthma: evidence-based insights on efficacy and safety from a meta-analysis of randomized trials",
+   "journal": "Frontiers in Pharmacology",
+   "date": "2026-09-24",
+   "doi": "10.3389/fphar.2026.1795193",
+   "type": "系統的レビュー/メタ解析",
+   "one_line": "6RCT・1,835人（6〜20歳）で、オマリズマブは増悪・重篤有害事象・入院を減らした。",
+   "take_home": [
+    "増悪はRR 0.66（95%CI 0.55-0.79）、入院はRR 0.35（0.22-0.56）と減少。",
+    "重篤な有害事象もRR 0.56（0.35-0.90）で、全体の有害事象は差なし。",
+    "肺機能と喘息コントロールは統合できず、標準治療で不十分な中等症〜重症への追加療法という位置づけ。"
+   ]
+  },
+  {
+   "pmid": "42851368",
+   "title": "Prenatal n-3 LC-PUFA intake and the incidence of allergic diseases in offspring: an updated systematic review and meta-analysis",
+   "journal": "Frontiers in Nutrition",
+   "date": "2026-09-24",
+   "doi": "10.3389/fnut.2026.1923649",
+   "type": "系統的レビュー/メタ解析",
+   "one_line": "妊娠中のn-3系脂肪酸摂取は、子の喘息や卵アレルギーのリスク低下と関連した。",
+   "take_home": [
+    "コホート8件：アレルギー疾患全体RR 0.88、喘息RR 0.81と関連。",
+    "RCT8件：卵アレルギーRR 0.47（0.28-0.80）。欧州集団で効果が目立った。",
+    "関連であって因果の確定ではなく、妊娠中の栄養指導への応用には質の高い研究が必要。"
+   ]
+  },
+  {
+   "pmid": "42859811",
+   "title": "The Use of Montelukast in Pediatric Asthma and Anti-Inflammatory Effects - Easy Choice or a Balancing Act?",
+   "journal": "Journal of Inflammation Research",
+   "date": "2026-10-06",
+   "doi": "10.2147/JIR.S604913",
+   "type": "レビュー",
+   "one_line": "モンテルカストの抗炎症作用と、神経精神症状への注意を含む利益とリスクの整理。",
+   "take_home": [
+    "FeNOや好酸球など炎症マーカーを下げうるが、ステロイドの代わりにはならない。",
+    "位置づけは追加の長期管理薬、または吸入が難しい場合の代替。",
+    "重い神経精神イベントの増加は示されていないが、睡眠・行動の変化は要モニタリング。"
+   ]
+  }
+ ],
+ "not_selected_this_week": [
+  {
+   "pmid": "42838885",
+   "reason": "EGIDに対する抗IL-5の系統的レビュー。小児アレルギー主題との関連がやや薄い"
+  },
+  {
+   "pmid": "42843931",
+   "reason": "小児の鼻噴霧ステロイド総説。今週は喘息中心に絞るため見送り"
+  },
+  {
+   "pmid": "42833751",
+   "reason": "診断検査の解釈など一般的な解説で新規性が低い"
+  }
+ ]
+}
