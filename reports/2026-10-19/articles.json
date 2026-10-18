@@ -1,0 +1,71 @@
+{
+ "date": "2026-10-19",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 89,
+ "review_rct_guideline_hits": 25,
+ "articles": [
+  {
+   "pmid": "42880628",
+   "title": "Pediatric Alpha-Gal Syndrome: From Missed Diagnosis to the Burden of Avoidance",
+   "journal": "Annals of Allergy, Asthma & Immunology",
+   "date": "2026-10-15",
+   "doi": "10.1016/j.anai.2026.10.012",
+   "type": "レビュー",
+   "one_line": "小児αガル症候群の診断の遅れと、過剰な除去による栄養・心理社会的負担を整理し、最小限の除去を提案するレビュー。",
+   "take_home": [
+    "小児では消化器症状のみの遅延型反応が多く、診断が遅れやすい。マダニ曝露は手がかりだが、咬傷の記憶がなくても否定できない。",
+    "診断には遅延型の症状とαガル特異的IgEの両方が必要で、感作だけでは診断できない。除去は哺乳類の肉と内臓肉が中心で、耐容できる乳製品は残す。",
+    "小児の栄養・成長・QOLを前向きに調べた研究はなく、寛解率や負荷試験の標準手順も未確立。定期的な再評価が重要。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42880628/"
+  },
+  {
+   "pmid": "42862369",
+   "title": "Innate and adaptive immunity pathways linking Mycoplasma pneumoniae to pediatric asthma phenotypes",
+   "journal": "European Journal of Pediatrics",
+   "date": "2026-10-12",
+   "doi": "10.1007/s00431-026-07514-0",
+   "type": "レビュー",
+   "one_line": "マイコプラズマが小児の喘鳴・増悪にどう関わるかを、臨床と実験の知見から整理したレビュー。",
+   "take_home": [
+    "マイコプラズマは小児の喘鳴や喘息増悪でよく検出されるが、上気道PCR陽性は保菌や長引く検出の可能性もあり、活動性感染とは限らない。",
+    "実験系では、上皮障害、2型炎症、Th17応答、CARDS毒素が喘息様の炎症を強めうると示されている。",
+    "病原体量と宿主反応を組み合わせた評価は提案段階で、診断・治療予測としての価値は未検証。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42862369/"
+  },
+  {
+   "pmid": "42883982",
+   "title": "Phenotype Switching in Pediatric Inflammatory Skin Diseases During Biologic Therapy: A Literature Review Focused on Atopic Dermatitis and Psoriasis",
+   "journal": "International Journal of Molecular Sciences",
+   "date": "2026-09-30",
+   "doi": "10.3390/ijms27198740",
+   "type": "レビュー",
+   "one_line": "生物学的製剤中に別の皮膚炎が出る「フェノタイプ・スイッチング」を、小児のアトピー性皮膚炎と乾癬で整理。",
+   "take_home": [
+    "原因薬剤はデュピルマブが最多で、乾癬様・膿疱性・掌蹠の発疹が、Th2からTh17優位への移行を背景に出ることがある。",
+    "IL-12/23阻害薬やTNF阻害薬での小児の報告は少ない。",
+    "重症・難治例やアトピー性皮膚炎と乾癬の重複例ではJAK阻害薬が有効との報告があり、検査モニタリングが前提。早期に気づくことが大切。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42883982/"
+  }
+ ],
+ "not_selected_this_week": [
+  {
+   "pmid": "42884662",
+   "reason": "乳幼児の除去食とDGBI・食物アレルギーの重複に関するナラティブレビュー。有力だったが、領域のバランス（食物アレルギー・喘息・AD）を優先して見送り。"
+  },
+  {
+   "pmid": "42884711",
+   "reason": "乳児期の腸内細菌と腸-肺軸の系統的レビュー。介入の臨床的含意がまだ限定的なため見送り。"
+  },
+  {
+   "pmid": "42876274",
+   "reason": "重症喘息の治療戦略と治験のレビュー。小児特異的データが乏しいため見送り。"
+  },
+  {
+   "pmid": "42882147",
+   "reason": "小児の一般的な発疹の概説。新規性が低いため見送り。"
+  }
+ ]
+}
