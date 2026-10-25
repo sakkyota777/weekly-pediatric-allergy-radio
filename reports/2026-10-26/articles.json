@@ -1,0 +1,66 @@
+{
+ "date": "2026-10-26",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 97,
+ "articles": [
+  {
+   "pmid": "42920250",
+   "title": "Cofactors in Anaphylaxis: Insights From the European Anaphylaxis Registry",
+   "journal": "Clinical and Experimental Allergy",
+   "date": "2026-10-23",
+   "type": "レジストリ解析",
+   "doi": "10.1111/cea.70457",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42920250/",
+   "one_line": "欧州アナフィラキシー登録(16,915例)で、疑われたコファクターと重症度・発症までの時間の関係を解析。",
+   "take_home": [
+    "コファクターが疑われた割合は18歳未満26%、成人59%と年齢で異なる。",
+    "子どもでは運動が最多(19%)で、急性感染症が重症度と一貫して関連した。",
+    "食物誘発で発症までの時間が長いときは、コファクターの有無を確認する。"
+   ]
+  },
+  {
+   "pmid": "42918414",
+   "title": "Nailfold capillary alterations in pediatric asthma: evidence of peripheral microvascular involvement",
+   "journal": "Annals of Allergy, Asthma & Immunology",
+   "date": "2026-10-23",
+   "type": "横断研究",
+   "doi": "10.1016/j.anai.2026.10.027",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42918414/",
+   "one_line": "喘息の子ども36人で爪郭ビデオキャピラロスコピーを行い、末梢微小血管の変化を示した横断研究。",
+   "take_home": [
+    "喘息の子どもでは健常基準より毛細血管密度が低く、拡張・蛇行血管が多かった。",
+    "中等症、高BMI、非吸入抗原感作の群で変化が目立った。",
+    "非侵襲的な血管評価として有望だが、小規模横断研究で確認が必要。"
+   ]
+  },
+  {
+   "pmid": "42896866",
+   "title": "Identification of Risk-Related Prenatal Medication Exposure Profiles for Childhood Asthma Using the Bayesian Profile Regression: A Cohort Study Using the POMME Cohort",
+   "journal": "Pharmacoepidemiology and Drug Safety",
+   "date": "2026-11",
+   "type": "コホート研究",
+   "doi": "10.1002/pds.70509",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42896866/",
+   "one_line": "仏POMMEコホート18,851人で、妊娠中の薬の曝露パターンと小児喘息の関連を探索。",
+   "take_home": [
+    "17の曝露プロファイルのうち6つで小児喘息リスクが全体(15.2%)より高かった。",
+    "高リスク群は母親の慢性疾患や合併症が多く、薬が原因とは言えない探索的結果。",
+    "妊娠中の薬は自己判断で中止せず、主治医に相談する。"
+   ]
+  }
+ ],
+ "not_selected_this_week": [
+  {
+   "pmid": "42918299",
+   "reason": "AD×IgE×デュピルマブ。対象が成人(>18歳)で小児対象でないため"
+  },
+  {
+   "pmid": "42918301",
+   "reason": "細気管支炎コホートの食物感作と喘息。抄録が取得できず内容確認不可"
+  },
+  {
+   "pmid": "42918298",
+   "reason": "FPIESの自宅導入。抄録が取得できず内容確認不可"
+  }
+ ]
+}
