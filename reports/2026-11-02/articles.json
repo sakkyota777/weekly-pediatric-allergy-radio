@@ -1,0 +1,78 @@
+{
+ "date": "2026-11-02",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 119,
+ "articles": [
+  {
+   "pmid": "42964773",
+   "title": "Development of a clinical prediction score for recurrent wheezing following acute lower respiratory tract infection in children",
+   "journal": "World Journal of Clinical Pediatrics",
+   "date": "2026-12-09 (15巻4号)",
+   "type": "後ろ向きコホート",
+   "doi": "10.5409/wjcp.123752",
+   "one_line": "タイ単施設の下気道感染後の子ども280人から、再発性喘鳴を予測する0〜9点のスコアを作成した。",
+   "take_home": [
+    "再発性喘鳴は280人中52人(18.6%)で、予測因子はアレルギー性鼻炎、喘息の家族歴、好酸球増多、下気道感染の反復、食物・薬剤アレルギーなど。",
+    "スコアのAUCは0.79で識別能は良好だが、後ろ向き単施設の研究。",
+    "外部検証が済むまでは、臨床判断の補助にとどめる。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42964773/"
+  },
+  {
+   "pmid": "42952042",
+   "title": "Clinical and laboratory factors associated with follow-up oral food challenge outcomes in cow's milk allergy",
+   "journal": "Allergy and Asthma Proceedings",
+   "date": "2026-11-01",
+   "type": "後ろ向き研究",
+   "doi": "10.2500/aap.2026.47.260064",
+   "one_line": "初回の牛乳負荷試験が陽性だった就学前児85人で、再負荷試験の結果に関わる因子を検討した。",
+   "take_home": [
+    "初回負荷前のカゼインIgE 3.71 kUA/L以上は、再負荷試験の陽性と独立して関連した。",
+    "カゼインIgEが低く、かつ全量投与後に反応が出た場合、再負荷陰性の陰性的中率は92.9%だった。",
+    "小規模な後ろ向き研究のため、再負荷の時期は主治医と相談する。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42952042/"
+  },
+  {
+   "pmid": "42948851",
+   "title": "Associations between air pollution and pediatric asthma hospitalizations across vulnerable groups in Louisiana",
+   "journal": "Environmental Epidemiology",
+   "date": "2026-10-26",
+   "type": "ケースクロスオーバー研究",
+   "doi": "10.1097/EE9.0000000000000544",
+   "one_line": "ルイジアナ州の18歳未満の喘息入院28,499件で、大気汚染物質への短期曝露との関連を解析した。",
+   "take_home": [
+    "PM、オゾン、NO2の累積曝露(0〜3日)は、喘息入院のオッズ上昇と関連した(PMでOR 1.079)。",
+    "人種による効果修飾は有意ではなく、ラグのパターンに違いがあった。",
+    "大気汚染の高い日は、吸入薬の確認など発作への備えを見直す。"
+   ],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42948851/"
+  }
+ ],
+ "not_selected_this_week": [
+  {
+   "pmid": "42964450",
+   "reason": "小児喘息と好酸球増多(後ろ向き)。似た主題の喘息論文が多く、今週は見送り"
+  },
+  {
+   "pmid": "42964482",
+   "reason": "スリランカの喘息有病率調査。記述的で新規性が低い"
+  },
+  {
+   "pmid": "42963157",
+   "reason": "食物アレルギー寛解に関する論説(抄録なし)"
+  },
+  {
+   "pmid": "42948065",
+   "reason": "マウス実験(フコイダン)で臨床的関連が薄い"
+  },
+  {
+   "pmid": "42935481",
+   "reason": "マウス実験(AhR)で臨床的関連が薄い"
+  },
+  {
+   "pmid": "42964867",
+   "reason": "ゲノム解析で、臨床的な含意が限定的"
+  }
+ ]
+}
