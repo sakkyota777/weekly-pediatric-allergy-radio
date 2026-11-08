@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-09",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 73,
+ "hits_high_evidence": 13,
+ "articles": [
+  {
+   "pmid": "42973282",
+   "title": "Five-year outcomes of the STOP-AD randomised controlled trial: Long-term effects of early emollient therapy in high-risk infants",
+   "journal": "Pediatric Allergy and Immunology",
+   "date": "2026-11 (Nov)",
+   "type": "ランダム化比較試験",
+   "doi": "10.1111/pai.70517",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42973282/",
+   "one_line": "アトピー性皮膚炎の高リスク新生児に生後8週間保湿剤を塗る介入の、5年後の追跡結果。",
+   "take_home": [
+    "5歳時点のアトピー性皮膚炎の有病率は、介入群12.3%、対照群24.0%（RR 0.52、95%CI 0.26〜1.02）。",
+    "重症度（SCORAD中央値）も介入群で低かった（12.0 対 19.6）。",
+    "脱落による不確実性が残り、多重補完では有意に届かない。結論は慎重に、追加の検証を待つ。"
+   ]
+  },
+  {
+   "pmid": "42982704",
+   "title": "Inhaled corticosteroid adherence in pediatric asthma: A systematic review of measurement methods and temporal patterns",
+   "journal": "Paediatric Respiratory Reviews",
+   "date": "2026-10-01",
+   "type": "系統的レビュー",
+   "doi": "10.1016/j.prrv.2026.09.009",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42982704/",
+   "one_line": "小児喘息の吸入ステロイドのアドヒアランスを、測定方法別に53研究で整理したレビュー。",
+   "take_home": [
+    "加重平均のアドヒアランスは、薬局の処方記録で55.8%、電子モニタリングで48.2%、自己申告で89.5%。",
+    "自己申告は客観的指標より30〜56ポイント高く出る。実際の服薬は約5割とみられる。",
+    "アドヒアランスは開始後3〜6か月で10〜30%低下する研究が多く、早期のフォローが鍵。"
+   ]
+  },
+  {
+   "pmid": "42980914",
+   "title": "Anaphylaxis in Mugwort-Related Pollen-Food Allergy Syndrome: An Underrecognized High-Risk Phenotype and its Molecular Basis",
+   "journal": "Clinical Reviews in Allergy & Immunology",
+   "date": "2026-11-04",
+   "type": "レビュー",
+   "doi": "10.1007/s12016-026-09216-9",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42980914/",
+   "one_line": "ヨモギ関連の花粉・食物アレルギー症候群で、アナフィラキシーに至る型の臨床像と分子的背景を整理。",
+   "take_home": [
+    "花粉・食物アレルギー症候群は口腔症状が多いが、ヨモギ関連ではアナフィラキシーも起こりうる。",
+    "Art v 3（nsLTP）やArt v 1の経路が関与し、加熱や消化後もIgE結合性が残る食物アレルゲンがある。",
+    "コンポーネント検査だけで臨床的な食物アレルギーやリスクは決められない。問診と曝露、補助因子で判断する。"
+   ]
+  }
+ ],
+ "not_selected_this_week": [
+  {
+   "pmid": "42982173",
+   "reason": "ピーナッツアレルギー免疫療法の医療経済レビュー。臨床的な直接性が低く次点"
+  },
+  {
+   "pmid": "42998301",
+   "reason": "アレルギー性鼻炎の実践レビュー。喘息・食物・AD の主軸から外れるため"
+  },
+  {
+   "pmid": "42982494",
+   "reason": "気候変動と小児肺機能の総説。関連は薄め"
+  },
+  {
+   "pmid": "42980841",
+   "reason": "小児アレルギーでのAI総説。臨床インパクトは今後"
+  }
+ ]
+}
