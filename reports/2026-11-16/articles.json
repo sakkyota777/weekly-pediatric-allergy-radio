@@ -1,0 +1,60 @@
+{
+ "date": "2026-11-16",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 108,
+ "hits_high_evidence": 19,
+ "articles": [
+  {
+   "pmid": "43024188",
+   "title": "Dupilumab Safety and Efficacy up to 3 Years in Children Aged 6 Months to 11 Years with Atopic Dermatitis: Results from a Phase III Open-Label Extension Study",
+   "journal": "American Journal of Clinical Dermatology",
+   "date": "2026-11-13",
+   "type": "第III相 非盲検継続試験（OLE）",
+   "doi": "10.1007/s40257-026-01082-7",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43024188/",
+   "one_line": "生後6か月〜11歳の中等症〜重症アトピー性皮膚炎で、デュピルマブを最長3年使った安全性と効果の報告。",
+   "take_home": [
+    "6か月〜5歳180人、6〜11歳383人が参加。152週の時点でEASI-75を約9割（90.3%、89.1%）が達成。",
+    "薬剤に関連する主な有害事象は結膜炎で、各群2〜3%程度だった。",
+    "非盲検・対照群なしで、152週まで続けたのは56〜65%。長期データとして参考にしつつ原著で確認を。"
+   ]
+  },
+  {
+   "pmid": "43032436",
+   "title": "Usability of Turbuhaler devices for children aged 5 to 11 years with asthma: A STep-wise Anti-inflammatory Reliever Therapy Children's Asthma Research substudy",
+   "journal": "The Journal of Allergy and Clinical Immunology: Global",
+   "date": "2026-10-06",
+   "type": "臨床試験サブスタディ",
+   "doi": "10.1016/j.jacig.2026.100793",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43032436/",
+   "one_line": "5〜11歳の喘息児100人で、ドライパウダー吸入器タービュヘイラーを正しく使えるかを検証。",
+   "take_home": [
+    "吸気流速は初回で93%が十分。初回評価で不十分だったのは100人中1人だけ。",
+    "必須の手順を初回で全部できたのは13%。練習を重ねると、ほぼ全員ができるようになった。",
+    "吸入手技は毎回の受診でチェックし、直すことが大切。"
+   ]
+  },
+  {
+   "pmid": "43021869",
+   "title": "Neurodevelopmental disorders in pediatric patients with atopic dermatitis: a systematic review and meta-analysis",
+   "journal": "Frontiers in Medicine",
+   "date": "2026-10-29",
+   "type": "系統的レビュー・メタ解析",
+   "doi": "10.3389/fmed.2026.1975921",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43021869/",
+   "one_line": "小児アトピー性皮膚炎と神経発達症（ADHD・自閉スペクトラム症など）の関連を39研究で統合。",
+   "take_home": [
+    "ADのある子では、ADHD（OR 1.34）、自閉スペクトラム症（OR 2.11）、学習障害（OR 1.71）のオッズが高かった。",
+    "仲間関係の問題とは、有意な関連がみられなかった（OR 1.10）。",
+    "観察研究で異質性が大きく、因果関係は言えない。かゆみや睡眠も含め、全体を見て支える視点を。"
+   ]
+  }
+ ],
+ "not_selected_this_week": [
+  {"pmid": "43025547", "reason": "幼児期ピーナッツ経口免疫療法の10年の実臨床経験。抄録がまだ無く内容を確認できないため次回以降に"},
+  {"pmid": "43025692", "reason": "生後12か月の喘息・喘鳴の予測因子（出生コホート）。良い研究だが今週は喘息枠を吸入手技に充てた"},
+  {"pmid": "43013728", "reason": "雷雨喘息のメタ解析。小児に限定されず次点"},
+  {"pmid": "43032126", "reason": "小児喘息のデジタル介入の系統的レビュー。先週のアドヒアランス回と主題が重なるため"},
+  {"pmid": "43033836", "reason": "5q31.1サイトカイン領域の遺伝学解析。基礎寄りのため優先度を下げた"}
+ ]
+}
