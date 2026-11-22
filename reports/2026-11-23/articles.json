@@ -1,0 +1,62 @@
+{
+ "date": "2026-11-23",
+ "query": "(children OR pediatric) AND (asthma OR food allergy OR atopic dermatitis)",
+ "hits_7days": 97,
+ "hits_high_evidence": 24,
+ "articles": [
+  {
+   "pmid": "43039015",
+   "title": "Early food introduction and skin intervention in the prevention of food allergy in young children (PreventADALL): 7-year follow-up of a factorial, multicentre, cluster-randomised trial",
+   "journal": "The Lancet Child & Adolescent Health",
+   "date": "2026-11-16",
+   "type": "クラスターランダム化試験（2×2要因デザイン）の7年追跡",
+   "doi": "10.1016/S2352-4642(26)00241-5",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43039015/",
+   "one_line": "生後3〜6か月の早期食物導入と乳児期の保湿介入について、7歳時点の食物アレルギー・感作・アトピー性皮膚炎への効果を2394人で追跡した。",
+   "take_home": [
+    "短期間の早期食物導入では、7歳時の介入食品アレルギーに明確な差はなかった（1.4% vs 1.8%）。",
+    "介入食品への感作は食物介入群で低かった（9.9% vs 15.6%）。継続的な摂取が必要な可能性。",
+    "食物＋皮膚の併用群は7歳のアトピー性皮膚炎が少なかった（17.3% vs 25.2%）。"
+   ]
+  },
+  {
+   "pmid": "43067379",
+   "title": "Real-World Outcomes of Long-Acting Beta-Agonist Add-On Therapy to Inhaled Corticosteroids in Preschool Children with Asthma: A Multicenter Retrospective Study",
+   "journal": "Chest",
+   "date": "2026-11-21",
+   "type": "多施設後ろ向き比較効果研究（TriNetX、傾向スコアマッチング）",
+   "doi": "10.1016/j.chest.2026.11.014",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43067379/",
+   "one_line": "6歳以下の喘息でICS+LABAとICS単独を約12,100人ずつ比較し、起点の取り方で見え方が変わることを示した実臨床研究。",
+   "take_home": [
+    "6歳以下でICS+LABAとICS単独を約12,100人ずつ、電子カルテデータで比較した。",
+    "診断時起点では全身ステロイドHR 1.37等と悪化が多く見えたが、LABA開始時起点ではHR 1.1台に縮小した。",
+    "重症例がLABAに選ばれる影響が大きく、因果は言えない。前向き研究が必要。"
+   ]
+  },
+  {
+   "pmid": "43065152",
+   "title": "Quality of Life During Oral Peanut Immunotherapy in the OPIA Trial",
+   "journal": "Clinical & Experimental Allergy",
+   "date": "2026-11-20",
+   "type": "二重盲検プラセボ対照RCTの副次解析（HRQoL）",
+   "doi": "10.1111/cea.70476",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43065152/",
+   "one_line": "10〜16歳のピーナッツ経口免疫療法RCT（OPIA, 65人）で、標準治療と比べた生活の質の変化を3年追跡まで検討した。",
+   "take_home": [
+    "OIT群と標準治療群で、12か月・13.5か月のHRQoL変化に差はなかった。",
+    "負荷試験で目標量（累積1449 mg）を達成しても、HRQoLがより改善するとは限らなかった。",
+    "治療関連の重篤な副反応は保護者代理評価のHRQoLを悪化させた（0.10 vs −0.97）。"
+   ]
+  }
+ ],
+ "not_selected_this_week": [
+  {"pmid": "43066612", "reason": "0〜36か月のアナフィラキシー68例の単施設後ろ向き研究。症例数が小さく今週は見送り"},
+  {"pmid": "43068078", "reason": "小児好酸球性喘息の生物学的製剤ネットワークメタ解析。喘息枠はLABA研究に充てた"},
+  {"pmid": "43050032", "reason": "就学前反復性喘鳴の専門家コンセンサス（World J Pediatr）。次回以降に候補"},
+  {"pmid": "43066823", "reason": "原因不明の食物関連アナフィラキシーの分子プロファイリング。食物アレルギー枠は2本確保済み"},
+  {"pmid": "43057486", "reason": "早期介入による食物アレルギー予防・管理のレビュー（JACI）。PreventADALLと主題が重なる"},
+  {"pmid": "43064158", "reason": "デュピルマブ→ウパダシチニブ切替のOLE。成人中心のため優先度を下げた"},
+  {"pmid": "43035336", "reason": "母乳中短鎖脂肪酸と乳幼児アレルギー（関連なし）。観察研究のため今回は見送り"}
+ ]
+}
